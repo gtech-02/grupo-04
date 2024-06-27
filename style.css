@@ -1,0 +1,103 @@
+.img-logo-nav{
+    width: 250px;
+    height: 80px;
+    margin-left: 50px;
+    
+}
+.link-cadastro-nav{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 9px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.d-flex{\
+    width: 900px;
+    margin-left: 100px;
+}
+.fa-solid{
+    color: rgb(39, 55, 90);
+    font-size: 30px;
+    padding: 2px;
+}
+.btn{
+    width: 100px;
+}
+.collapse{
+    padding-left: 45px;
+}
+/*  rodape footer */
+
+.rodape{
+    background-color: #181818;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.rodape-div-1{
+    display: flex;
+    width: 750px;
+    padding: 10px;
+}
+.rodape-div-2{
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.rodape-div-3{
+    display: flex;
+    width: 200px;
+    padding: 10px;
+}
+.rodape-div-4{
+    display: flex;
+    width: 200;
+    padding: 10px;
+}
+.fa-brands{
+    color: rgb(214, 214, 214);
+    font-size: 30px;
+    padding: 5px;
+    
+}
+.rodape span{
+    font-size: 25px;
+    color: white;
+    
+}
+.rodape-direitos{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+/*mobile*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+    }
+    
+}
