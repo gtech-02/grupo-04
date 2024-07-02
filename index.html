@@ -16,13 +16,78 @@
       align-items: center;
       margin-top: 25px;
     }
-    .li-header{
+    #li-header{
       color: black;
     }
-    .li-header:hover{
+    #li-header:hover{
       color: #c90071;
       border-bottom: 2px solid #c90071;
     }
+
+    @media(max-width: 422px) {
+      .d-inline-block{
+        width: 30% !important;
+      }
+    }
+
+    @media(max-width: 382px) {
+      .d-inline-block{
+        width: 28% !important;
+      }
+    }
+
+    @media(max-width: 372px) {
+      .d-inline-block{
+        width: 25% !important;
+      }
+    }
+
+    @media(max-width:1180px){
+      .btn, .form-control, .link-secondary{
+        display: none;
+      }
+      .icon-search{
+        position: absolute;
+        margin-left: 0 !important;
+        right: 70px;
+        bottom: 10px;
+      }
+
+      .d-inline-block{
+        width: 150px;
+        margin-left: 130px;
+      }
+      .navbar-toggler{
+        position: absolute;
+        bottom: 40px;
+        left: -25px;
+      }
+      
+    }
+
+    @media(max-width:500px){
+      .btn, .form-control, .link-secondary{
+        display: none;
+      }
+      .icon-search{
+        position: absolute;
+        margin-left: 0 !important;
+        right: 70px;
+        bottom: 10px;
+      }
+
+      .d-inline-block{
+        width: 150px;
+        margin-left: 130px;
+      }
+      .navbar-toggler{
+        position: absolute;
+        bottom: 40px;
+        left: -25px;
+      }
+      
+    }
+
   </style>
 <body>
     <!-- menu inicial header -->
@@ -32,7 +97,7 @@
                 <img src="logo-header.svg" alt="Logo" class="d-inline-block align-text-top">
               <form class="d-flex" role="search">
                 <input class="form-control me-2 px-6" type="search" placeholder="Pesquisar Produto... " aria-label="Search" style="width:500px;background-color: rgb(228, 223, 223); height: 45px;">
-                <img src="https://cdn.icon-icons.com/icons2/38/PNG/512/search_4883.png" alt="" width="20px" height="20px" style="position:absolute;margin-top: 12px; margin-left: 458px;">
+                <img class="icon-search" src="https://cdn.icon-icons.com/icons2/38/PNG/512/search_4883.png" alt="" width="20px" height="20px" style="position:absolute;margin-top: 12px; margin-left: 458px;">
               </form>
     
                 <div>
@@ -44,22 +109,29 @@
             </div>       
           </nav>
     
-          <div style="margin-left: 65px; margin-top: 25px;" >
-            <ul style="display: flex; justify-content: flex-start; align-items: center; list-style: none;" >
-              <li class="nav-item p-4 g-col-6">
-                <a href="#" style="text-decoration: none;" class="li-header">Home</a>
-              </li>
-              <li class="nav-item p-4 g-col-6" >
-                <a href="#" style="text-decoration: none;" class="li-header">Produtos</a>
-              </li>
-              <li class="nav-item p-4 g-col-6">
-                <a href="#" style="text-decoration: none;" class="li-header">Categorias</a>
-              </li>
-              <li class="nav-item p-4 g-col-6">
-                <a href="#" style="text-decoration: none;" class="li-header">Meus Pedidos</a>
-              </li>
-            </ul>
-          </div>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-left: 45px;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li  class="nav-item">
+                    <a id="li-header" class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li  class="nav-item">
+                    <a id="li-header" class="nav-link" href="#">Produtos</a>
+                  </li>
+                  <li  class="nav-item">
+                    <a id="li-header" class="nav-link" href="#">Categorias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  id="li-header" class="nav-link" href="#">Meus Pedidos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
       </header>  
     <!-- FINAL menu inicial header -->     
      
