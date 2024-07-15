@@ -10,12 +10,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+<style>
+  .navbar{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .li-header{
+    color: black;
+  }
+  .li-header:hover{
+    color: #c90071;
+    border-bottom: 2px solid #c90071;
+  }
+  .image-container{
+      display: flex;
+      justify-content: space-between;
+  }
+  .image-container img{
+     flex: 1;
+     max-width: 30%;
+     border-radius: 10px;
+     box-shadow: 0 5px 8px rgb(118, 118, 118);
+     margin: 20px;
+  }
+</style>
 <body>
     <!-- menu inicial header -->
     <header class="header">
         <nav class="navbar">
             <div class="container">
-                <img src="logo-header.svg" alt="Logo" class="d-inline-block align-text-top">
+                <img src="./images/logo-header.svg" alt="Logo" class="d-inline-block align-text-top">
               <form class="d-flex" role="search">
                 <input class="form-control me-2 px-6" type="search" placeholder="Pesquisar Produto... " aria-label="Search" style="width:500px;background-color: rgb(228, 223, 223); height: 45px;">
                 <img class="icon-search" src="https://cdn.icon-icons.com/icons2/38/PNG/512/search_4883.png" alt="" width="20px" height="20px" style="position:absolute;margin-top: 12px; margin-left: 458px;">
@@ -26,7 +51,7 @@
                   <button type="button" class="btn btn-dark" style="margin-left: 15px; padding: 5px 20px; background-color: #c90071; border: none;">Entrar</button>
                 </div>          
     
-                <img src="mini-cart.svg" >
+                <img src="./images/mini-cart.svg" >
             </div>       
           </nav>
     
@@ -54,30 +79,190 @@
     
     <!-- inicio carrossel-->
 
-    <section id="corpo">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://img.freepik.com/fotos-gratis/conceito-de-rpa-com-tela-de-toque-de-mao-embacada_23-2149311914.jpg?t=st=1719487015~exp=1719490615~hmac=f69487e001c24110eb4b2d40b52f5a48946bc70cd6e01d30a8ded0b10ad98dd3&w=996" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://img.freepik.com/fotos-gratis/conceito-de-rpa-com-tela-de-toque-de-mao-embacada_23-2149311914.jpg?t=st=1719487015~exp=1719490615~hmac=f69487e001c24110eb4b2d40b52f5a48946bc70cd6e01d30a8ded0b10ad98dd3&w=996" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://img.freepik.com/fotos-gratis/conceito-de-rpa-com-tela-de-toque-de-mao-embacada_23-2149311914.jpg?t=st=1719487015~exp=1719490615~hmac=f69487e001c24110eb4b2d40b52f5a48946bc70cd6e01d30a8ded0b10ad98dd3&w=996" class="d-block w-100" alt="...">
-              </div>
+  </style>
+  <body>
+  </style>
+  <body>
+      <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://imgcentauro-a.akamaihd.net//05_Campanhas/2024/LeveTudo/Junho/nikemidiakit/desk.jpg" class="d-block w-100" alt="...">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+              <img src="https://imgcentauro-a.akamaihd.net//05_Campanhas/2024/LeveTudo/Junho/nikemidiakit/desk.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://imgcentauro-a.akamaihd.net//05_Campanhas/2024/LeveTudo/Junho/nikemidiakit/desk.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
-    </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      <div  class="image-container" style="display: flex; margin: 15px;">
+          <img src="https://imgnike-a.akamaihd.net/branding/cdp-pegasus-41/assets/img/double_container_bg4.jpg" alt="imagem 1">
+          <img src="https://imgnike-a.akamaihd.net/branding/cdp-pegasus-41/assets/img/double_container_bg5.jpg" alt="imagem 3">
+          <img src="https://imgnike-a.akamaihd.net/branding/cdp-pegasus-41/assets/img/double_container_bg3.jpg" alt="imagem 2">
+      </div>
     <!-- FINAL carrossel-->
+
+    <!-- Produtos início -->
+<nav id="navcards">
+  <section>
+      <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+      <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <div class="card ">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773189-MLB74195426809_012024-F.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tênis Adidas M5</h5>
+                    <p  id=preço class="card-text">Preço: $50.00</p>
+                    <p id= juros class="card-text">em até 6x de R$55,00 sem juros</p>
+                    <div class="rating">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                      <img id= star src ="https://pngimg.com/uploads/star/star_PNG41474.png">
+                    </div>
+                    <a href="#" class="btn btn-outline-success">Comprar</a>
+                  </div>
+                </div>
+          </div>
+
+  </section>
+</nav>    
 
 
     <!-- RODAPE footer -->
