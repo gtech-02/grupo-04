@@ -4,94 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<style>
-    .navbar{
-      display: flex;
-      align-items: center;
-      margin-top: 25px;
-    }
-    #li-header{
-      color: black;
-    }
-    #li-header:hover{
-      color: #c90071;
-      border-bottom: 2px solid #c90071;
-    }
-
-    @media(max-width: 422px) {
-      .d-inline-block{
-        width: 30% !important;
-      }
-    }
-
-    @media(max-width: 382px) {
-      .d-inline-block{
-        width: 28% !important;
-      }
-    }
-
-    @media(max-width: 372px) {
-      .d-inline-block{
-        width: 25% !important;
-      }
-    }
-
-    @media(max-width:1180px){
-      .btn, .form-control, .link-secondary{
-        display: none;
-      }
-      .icon-search{
-        position: absolute;
-        margin-left: 0 !important;
-        right: 70px;
-        bottom: 10px;
-      }
-
-      .d-inline-block{
-        width: 150px;
-        margin-left: 130px;
-      }
-      .navbar-toggler{
-        position: absolute;
-        bottom: 40px;
-        left: -25px;
-      }
-      
-    }
-
-    @media(max-width:500px){
-      .btn, .form-control, .link-secondary{
-        display: none;
-      }
-      .icon-search{
-        position: absolute;
-        margin-left: 0 !important;
-        right: 70px;
-        bottom: 10px;
-      }
-
-      .d-inline-block{
-        width: 150px;
-        margin-left: 130px;
-      }
-      .navbar-toggler{
-        position: absolute;
-        bottom: 40px;
-        left: -25px;
-      }
-      
-    }
-
-  </style>
 <body>
     <!-- menu inicial header -->
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="container">
                 <img src="logo-header.svg" alt="Logo" class="d-inline-block align-text-top">
@@ -109,13 +30,9 @@
             </div>       
           </nav>
     
-          <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-left: 45px;">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+          <nav id="navbar-item" class="navbar navbar-expand-lg ">
+              <div  class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 110px;" >
+                <ul  class="navbar-nav me-auto mb-2 mb-lg-0" >
                   <li  class="nav-item">
                     <a id="li-header" class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -129,8 +46,7 @@
                     <a  id="li-header" class="nav-link" href="#">Meus Pedidos</a>
                   </li>
                 </ul>
-              </div>
-            </div>
+              </div>    
           </nav>
       </header>  
     <!-- FINAL menu inicial header -->     

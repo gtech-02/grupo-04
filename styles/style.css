@@ -1,31 +1,17 @@
-.img-logo-nav{
-    width: 250px;
-    height: 80px;
-    margin-left: 50px;
-    
-}
-.link-cadastro-nav{
-    text-decoration: none;
-    margin-left: 10px;
-    margin-top: 9px;
-    margin-right: 10px;
-    font-size: 14px;
-}
-.d-flex{
-    width: 900px;
-    margin-left: 100px;
-}
-.fa-solid{
-    color: rgb(39, 55, 90);
-    font-size: 30px;
-    padding: 2px;
-}
-.btn{
-    width: 100px;
-}
-.collapse{
-    padding-left: 45px;
-}
+/* header */
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+  #li-header{
+    color: black;
+  }
+  #li-header:hover{
+    color: #c90071;
+    border-bottom: 2px solid #c90071;
+  }
+
 /*  rodape footer */
 
 .rodape{
