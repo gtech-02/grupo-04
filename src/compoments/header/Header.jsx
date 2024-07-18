@@ -53,22 +53,22 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ paddingLeft: '110px' }}>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li id='li-header' className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">
+                            <Link className="nav-link li-text" aria-current="page" to="/">
                                 Home
                             </Link>
                         </li>
                         <li id='li-header' className="nav-item">
-                            <Link className="nav-link" to="/products">
+                            <Link className="nav-link li-text" to="/products">
                                 Produtos
                             </Link>
                         </li>
                         <li id='li-header' className="nav-item">
-                            <Link className="nav-link" to="/categories">
+                            <Link className="nav-link li-text" to="/categories">
                                 Categorias
                             </Link>
                         </li>
                         <li id='li-header' className="nav-item">
-                            <Link className="nav-link" to="/orders">
+                            <Link className="nav-link li-text" to="/orders">
                                 Meus Pedidos
                             </Link>
                         </li>
