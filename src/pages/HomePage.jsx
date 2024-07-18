@@ -7,6 +7,7 @@ const HomePage = () => {
             <h1>Home Page</h1>
             <h2>Bem-vindo a Home page</h2>
         </Layout>
+        
 
 
         </>
@@ -14,3 +15,4 @@ const HomePage = () => {
 }
  
 export default HomePage;
+
