@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+  #li-header{
+    color: black;
+  }
+  #li-header:hover{
+    color: #c90071;
+    border-bottom: 2px solid #c90071;
+  }
