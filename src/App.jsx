@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductViewPage from './pages/ProductViewPage';
 import ProductListiningPage from './pages/ProductListingPage';
 import Pedidos from './pages/Pedidos';
+import React from 'react';
 
 
 function App() {
@@ -20,3 +21,5 @@ function App() {
 }
 
 export default App
+
+
