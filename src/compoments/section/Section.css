@@ -1,0 +1,39 @@
+/* #divsection{
+    width: 80%;
+    background-color: rgb(255, 255, 255) ;
+    } */
+    .section-container {
+        width: 100%;
+        padding: 1rem 0;
+      }
+      
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      
+      .section-header.center {
+        justify-content: center;
+      }
+      
+      .section-title {
+        color: #4a4a4a;
+        font-size: 24px;
+        margin: 0;
+      }
+      
+      .section-title.center {
+        text-align: center;
+      }
+      
+      .section-link {
+        color: #007bff;
+        font-size: 18px;
+        margin-left: auto;
+      }
+      
+      .section-content {
+        /* Add any additional styles for the section content */
+      }

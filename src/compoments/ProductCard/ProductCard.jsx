@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductCard.css';
-import productImage from "../../../public/produc-image-5.jpeg"
+import productImage from "../../../public/produc-image-6.png"
 
 
 const Card = () => {
