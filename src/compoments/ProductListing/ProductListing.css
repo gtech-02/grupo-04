@@ -1,7 +1,7 @@
 nav{
     display: flex;
     width: 100%;
-    background-color: rgb(216, 202, 230);
+    background-color: rgb(255, 255, 255);
     height: 10 vh;
     justify-content: center;
     padding-top: 3%;
@@ -9,5 +9,5 @@ nav{
 
 section{
     width: 80%;
-    background-color: rgb(159, 160, 177) ;
+    background-color: rgb(255, 255, 255) ;
     }
