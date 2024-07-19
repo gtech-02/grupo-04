@@ -21,9 +21,9 @@ const Footer = () => {
                         <p>
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
                         </p>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i className="fa-brands fa-twitter"></i></a>
                         
                     </div>
     
