@@ -7,6 +7,7 @@ const HomePage = () => {
         <Layout>
         <CallToAction/>
         </Layout>
+        
 
 
         </>
@@ -14,3 +15,4 @@ const HomePage = () => {
 }
  
 export default HomePage;
+
