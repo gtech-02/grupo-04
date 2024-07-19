@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './header/Header';
-import ProductDetails from './productDetails/ProductDetails';
-const Layout = (props) => {
+
+const Layout = (children) => {
     return ( 
         <>
             <Header />
             <main>
-                {props.children}
-                <ProductDetails />
+                {children}
+                
             </main>
 
             <footer>footer</footer>
