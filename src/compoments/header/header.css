@@ -5,6 +5,9 @@
   }
   #li-header{
     color: black;
+    font-weight: 400;
+    font-size: 18px;
+    
   }
   #li-header:hover{
     color: #c90071;

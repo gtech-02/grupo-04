@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logoHeader from '../../assets/logo-header.svg'
 import miniCart from '../../assets/mini-cart.svg'
 import { Link } from 'react-router-dom';
 import './header.css'
 const Header = () => {
+    const[busca, setBusca] = useState()
     return ( 
         <div className="header">
             <nav className="navbar">
@@ -12,7 +13,7 @@ const Header = () => {
                     <form className="d-flex" role="search">
                         <input
                             className="form-control me-2 px-6"
-                            type="search"
+                            type="text"
                             placeholder="Pesquisar Produto..."
                             aria-label="Search"
                             style={{ width: '500px', backgroundColor: 'rgb(228, 223, 223)', height: '45px' }}
