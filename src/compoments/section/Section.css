@@ -1,7 +1,3 @@
-/* #divsection{
-    width: 80%;
-    background-color: rgb(255, 255, 255) ;
-    } */
     .section-container {
         width: 100%;
         padding: 1rem 0;
@@ -31,9 +27,10 @@
       .section-link {
         color: #007bff;
         font-size: 18px;
-        margin-left: auto;
+        margin-left: 75%;
+        color: #d81b60;
+        font-size: 17px; 
+        text-decoration: none; 
+      
       }
       
-      .section-content {
-        /* Add any additional styles for the section content */
-      }
