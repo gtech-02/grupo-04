@@ -4,11 +4,11 @@ import './Section.css';
 
 
 
-const Section = ({ title, titleAlign = 'left', link, children }) => (
+const Section = ({ title, titleAlign = 'left', link, linkText, children }) => (
   <div class="section-container">
     <div class="section-header center">
-      <h2 class="section-title center">Produtos em alta</h2>
-      <a href="https://example.com" class="section-link">Ver Todos</a>
+      <h2 class="section-title center">{title}</h2>
+      <a href="https://example.com" class="section-link">{linkText}</a>
     </div>
     <div class="section-content">
       {children}
