@@ -4,8 +4,8 @@ const ProductViewPage = () => {
     return ( 
         <>
             <Layout>
-                <h1>Categorias</h1>
-                <h2>Bem vindo a categorias</h2>
+                <h1>Produtos</h1>
+                <h2>Bem vindo a seção de produtos</h2>
             </Layout>
         </>
      );
