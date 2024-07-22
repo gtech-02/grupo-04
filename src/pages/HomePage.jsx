@@ -1,25 +1,26 @@
 import Layout from "../compoments/Layout";
 import ProducListing from "../compoments/ProductListing/ProductListing";
 import Section from "../compoments/section/Section"
+import CallToAction from "../compoments/callAction/CallAction";
+
 
 const HomePage = () => {
 
     return ( 
         <>
         <Layout>
-            <h1>Home Page</h1>
-            <h2>Bem-vindo a Home page</h2>
-        </Layout>
-        
         <Section >
-        <ProducListing quantidade={4}/>
-        
+        <ProducListing quantidade={8}/>
         </Section>
+        <CallToAction/>
+        </Layout>
         
         </>
 
         
      );
 }
+
  
 export default HomePage;
+
