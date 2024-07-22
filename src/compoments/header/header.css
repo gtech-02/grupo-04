@@ -5,8 +5,14 @@
   }
   #li-header{
     color: black;
+    font-weight: bold;
+    font-size: 18px;
   }
   #li-header:hover{
     color: #c90071;
     border-bottom: 2px solid #c90071;
+  }
+
+  .li-text:hover{
+    color: #c90071;
   }
