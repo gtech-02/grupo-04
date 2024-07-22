@@ -7,9 +7,9 @@ const Footer = () => {
 
     return(
 
-        <footer className="text-center text-lg-start text-white text-sm" style={{ backgroundColor: 'rgb(33, 37, 41)' }}>
-        <section className="justify-content-left p-1" style={{ backgroundColor: 'rgb(33, 37, 41)' }}>
-            {/* Conteúdo do primeiro section omitido para brevidade */}
+        <footer className="text-center text-lg-start text-white text-sm" style={{ backgroundColor: 'black' }}>
+        <section className="justify-content-left p-1" style={{ backgroundColor: 'black' }}>
+
         </section>
     
         <section className="">
@@ -17,13 +17,13 @@ const Footer = () => {
                 <div className="row mt-3">
                     <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 className="text-uppercase fw-bold"><img src= {logoFooter} alt="Logo" className="d-inline-block align-text-top logo-width"/></h6>
-                        <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '0', backgroundColor: '#7c4dff', height: '2px' }} />
+                        <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '0', backgroundColor: '#7c4dff', height: '1px' }} />
                         <p>
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
                         </p>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://web.facebook.com/digitalcollegebr/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/digitalcollegebr/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Feaicollegers"><i class="fa-brands fa-twitter"></i></a>
                         
                     </div>
     
@@ -70,7 +70,7 @@ const Footer = () => {
     
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 className="text-uppercase fw-bold">Contatos</h6>
-                        <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '0', backgroundColor: '#7c4dff', height: '2px' }} />
+                        <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '0', height: '2px' }} />
                         <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
                         <p>(85) 3051-3411</p>
                     </div>
@@ -78,8 +78,8 @@ const Footer = () => {
             </div>
         </section>
     
-        <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', borderTop: '2px solid #333'  // Definindo uma borda superior de 2px sólida na cor #333
-}}>
+        <div className="text-center p-3" style={{ backgroundColor: 'black'}}>
+        <hr className="mb-4 mt-0 d-block mx-auto" style={{ width: '85%', backgroundColor: 'gray', height: '1px' }} />
             © 2024 Copyright - Digital College.
         </div>
     </footer>
