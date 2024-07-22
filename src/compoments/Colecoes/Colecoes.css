@@ -1,0 +1,60 @@
+.colecoes-em-destaque {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .colecoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .colecao-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer; /* Adicionado aqui */
+  }
+  
+  .colecao-item .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+.colecao-item :hover{
+transform: scale(1.1)
+  }
+
+  .colecao-item p {
+    font-weight: bold;
+  }
+
+  /* Media queries para responsividade */
+@media (max-width: 768px) {
+    .colecoes {
+      gap: 10px; /* Reduzir o espaçamento entre os ícones */
+    }
+    
+    .colecao-item .icon {
+      width: 80px;
+      height: 80px;
+      font-size: 30px; /* Reduzir o tamanho dos ícones */
+    }
+  }
+  
+@media (max-width: 480px) {
+    .colecao-item .icon {
+      width: 60px;
+      height: 60px;
+      font-size: 20px; /* Reduzir ainda mais o tamanho dos ícones */
+    }
+  }

@@ -1,0 +1,47 @@
+/* CallToAction.css */
+
+.call-to-action {
+    padding: 2rem 0;
+  }
+  
+  .call-to-action__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .call-to-action__highlight {
+    color: #d10062; /* Ajuste a cor conforme necessário */
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .call-to-action__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .call-to-action__description {
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .call-to-action__button {
+    background-color: #d10062; /* Ajuste a cor conforme necessário */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    display: inline-block;
+  }
+  
+  @media (min-width: 992px) {
+    .call-to-action__title {
+      font-size: 2.5rem;
+    }
+  }
+  

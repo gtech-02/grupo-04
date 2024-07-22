@@ -1,13 +1,19 @@
 import Layout from "../compoments/Layout";
 import Gallery from "../compoments/Gallery/gallery";
+import CallToAction from "../compoments/callAction/CallAction";
+import Colecoes from "../compoments/Colecoes/Colecoes";
+import Carrossel from "../compoments/carrossel/carrossel";
+
 const HomePage = () => {
     return ( 
         <>
         <Layout>
-            <h1>Home Page</h1>
-            <h2>Bem-vindo a Home page</h2>
-            <Gallery/>
+        <Carrossel/>
+        <Gallery/>
+        <Colecoes/>
+        <CallToAction/>
         </Layout>
+        
 
 
         </>
@@ -15,3 +21,6 @@ const HomePage = () => {
 }
  
 export default HomePage;
+
+
+
