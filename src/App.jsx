@@ -2,8 +2,6 @@ import Rotas from "./Routes"
 
 
 
-
-
 function App() {
 
   return (
@@ -12,4 +10,5 @@ function App() {
 }
 
 export default App
+
 

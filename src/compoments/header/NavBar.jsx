@@ -30,7 +30,7 @@ const NavBar = () => {
                             onKeyDown={(e) => e.key === 'Enter' ? handleClick() : null}
                             placeholder="Pesquisar Produto..."
                             aria-label="Search"
-                            style={{ width: '500px', backgroundColor: 'rgb(228, 223, 223)', height: '45px' }}
+                           
                         />
                         <img
                             onClick={handleClick}
@@ -39,7 +39,7 @@ const NavBar = () => {
                             alt=""
                             width="20px"
                             height="20px"
-                            style={{ position: 'absolute', marginTop: '12px', marginLeft: '458px' }}
+                            
                         />
                     </form>
 
@@ -49,13 +49,7 @@ const NavBar = () => {
                         </a>
                         <button
                             type="button"
-                            className="btn btn-dark"
-                            style={{
-                                marginLeft: '15px',
-                                padding: '5px 20px',
-                                backgroundColor: '#c90071',
-                                border: 'none'
-                            }}
+                            className="btn btn-dark btn-custom"     
                         >
                             Entrar
                         </button>

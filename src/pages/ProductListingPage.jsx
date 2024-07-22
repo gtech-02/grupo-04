@@ -1,11 +1,16 @@
 import Layout from "../compoments/Layout";
+
 import FilterGroup from "../compoments/filtergroup/FilterGroup";
 import ProducListing from "../compoments/ProductListing/ProductListing";
 import Section from "../compoments/section/Section"
+
+import ProductDetails from '../compoments/productDetails/ProductDetails'
+
 const ProductListiningPage = () => {
     return (
         <>
             <Layout>
+
                 <h1>Produtos</h1>
                 <h2>Bem vindo a seção de produtos</h2>
                 <div className="container">
@@ -27,6 +32,9 @@ const ProductListiningPage = () => {
                         </div>
                     </div>
                 </div>
+
+            <ProductDetails />               
+
             </Layout>
 
 
