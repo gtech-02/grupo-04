@@ -1,16 +1,15 @@
-import Layout from "../compoments/Layout";
-
+import React from 'react';
+import Layout from "../components/Layout";
+import Gallery from '../components/Gallery/Gallery.jsx' 
 const HomePage = () => {
     return ( 
         <>
-        <Layout>
-            <h1>Home Page</h1>
-            <h2>Bem-vindo a Home page</h2>
-        </Layout>
-
-
+            <Layout>
+                <Gallery />
+            </Layout>
+           
         </>
-     );
+    );
 }
- 
+
 export default HomePage;

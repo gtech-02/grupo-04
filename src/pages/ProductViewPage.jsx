@@ -1,4 +1,4 @@
-import Layout from "../compoments/Layout";
+import Layout from "../components/Layout";
 
 const ProductViewPage = () => {
     return ( 
