@@ -1,86 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
+.product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #c5c6c6;
+    border-radius:  #d4b805;
+}
+.estrelas{
+    font-size: 25px;
+    color: #d4b805; 
+}
+.avaliacao{
+    display: inline;
+    font-size: 12px;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+.product-details {
+    padding: 20px;
+    flex: 1;
+}
 
-        .product-container {
-            display: flex;
-            max-width: 1200px;
-            margin: 50px auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
+.product-details h1 {
+    margin-top: 0;
+    font-weight: bold;
+}
+.product-details h2{
+    font-size: 10px;
+}
+.details{
+    font-size: 14px;
+    font-weight: bold;
+}
+.details h2{
+    font-size: 13px;
 
-        .product-image img {
-            width: 100%;
-            height: auto;
-        }
+}
+.product-variations {
+    margin: 20px 0;
+}
 
-        .product-details {
-            padding: 20px;
-            flex: 1;
-        }
+.variation {
+    margin-bottom: 10px;
+}
 
-        .product-details h1 {
-            margin-top: 0;
-            font-weight: bold;
-        }
-        .product-details h2{
-            font-size: 10px;
-        }
-        .details{
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .details h2{
-            font-size: 13px;
+.variation label {
+    margin-right: 10px;
+}
 
-        }
-        .product-variations {
-            margin: 20px 0;
-        }
+.product-price h1{
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    display: inline;
+}
+.product-price p{
+    text-decoration: line-through; 
+    display: inline;
+    margin: 10px;
+    font-size: 12px;
+}
+.product-prc {
+    font-size: 13px;
+}
 
-        .variation {
-            margin-bottom: 10px;
-        }
+.add-to-cart {
+    background-color: #daa403;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
 
-        .variation label {
-            margin-right: 10px;
-        }
-
-        .product-price h1{
-            font-size: 20px;
-            color: #333;
-            font-weight: bold;
-            display: inline;
-        }
-        .product-price p{
-            text-decoration: line-through; 
-            display: inline;
-            margin: 10px;
-            font-size: 12px;
-        }
-        .product-prc {
-            font-size: 13px;
-        }
-
-        .add-to-cart {
-            background-color: #daa403;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-
-        .add-to-cart:hover {
-            background-color: #0e0e0e;
-        }
+.add-to-cart:hover {
+    background-color: #0e0e0e;
+}
+.button-tamanhos {
+    display: flex;
+  }
+  .button-tamanhos button {
+    margin-right: 6px; 
+    padding: 1px 8px; 
+    border: none;
+    border-radius: 7px;
+    background-color: #c5c6c6;
+    color: rgb(11, 11, 11);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  /* evita que a última margem da direita seja aplicada */
+  .button-tamanhos button:last-child {
+    margin-right: 0;
+  }
+  .button-tamanhos button:hover{
+    background-color: #c90071;
+  }
+  .button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .button-1 { background-color: #3498db; }
+  .button-2 { background-color: #2ecc71; }
+  .button-3 { background-color: #e74c3c; }
+  .button-4 { background-color: #f39c12; }
+  .button-5 { background-color: #9b59b6; }
   
+  .button:hover {
+    box-shadow: 10 20px 30px rgba(0,0,0,0.2);
+    width: 27px;
+    border: 2px solid black;
+  }
