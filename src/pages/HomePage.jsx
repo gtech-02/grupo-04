@@ -7,8 +7,8 @@ const HomePage = () => {
     return ( 
         <>
         <Layout>
-        <Colecoes/>
         <Carrossel/>
+        <Colecoes/>
         <CallToAction/>
         </Layout>
         
