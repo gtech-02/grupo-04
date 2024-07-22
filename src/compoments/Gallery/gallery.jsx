@@ -1,5 +1,5 @@
 import React from 'react';
-import './Gallery.css';
+import './gallery.css';
 import Discount from './discount';
 {/* <div class="d-flex justify-content-end mb-3">
     <button type="button" class="btn btn-primary">Direita</button>
@@ -8,9 +8,9 @@ import Discount from './discount';
 const Gallery = () => {
   return (
   <div className='agrupar'>
-    
+
     <div className="card-group">
-    
+
       <div className="card position-relative">
         <img
           src="..\public\collection-1.png"
@@ -21,7 +21,7 @@ const Gallery = () => {
        <Discount/>
       </div>
       <div className="card">
-        
+
         <img
           src="..\public\collection-2.png"
           className="card-img-top"
@@ -44,4 +44,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Gallery
