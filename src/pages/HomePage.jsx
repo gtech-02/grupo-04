@@ -1,11 +1,11 @@
 import Layout from "../compoments/Layout";
+import CallToAction from "../compoments/callAction/CallAction";
 
 const HomePage = () => {
     return ( 
         <>
         <Layout>
-            <h1>Home Page</h1>
-            <h2>Bem-vindo a Home page</h2>
+        <CallToAction/>
         </Layout>
         
 

@@ -1,0 +1,9 @@
+{
+    "products": [
+      { "id": 1, "name": "nike" },
+      { "id": 2, "name": "adidas" },
+      { "id": 3, "name": "puma" },
+      { "id": 4, "name": "centauro" }
+    ]
+  }
+  

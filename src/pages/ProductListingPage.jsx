@@ -5,7 +5,7 @@ const ProductListiningPage = () => {
     return ( 
         <>
             <Layout>
-            <ProductDetails />
+            <ProductDetails />               
             </Layout>
 
         
