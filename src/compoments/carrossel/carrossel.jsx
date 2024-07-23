@@ -5,12 +5,12 @@ import './Carrossel.css';
 const Carrossel = () => {
     return (
       <Carousel
-        indicators={true}  // Mostrar indicadores
-        controls={false}   // Ocultar setas de controle
-        interval={3000}    // Tempo entre slides (em milissegundos)
+        indicators={true}
+        controls={false}
+        interval={3000}
       >
         <Carousel.Item>
-          <div className="carousel-content d-flex justify-content-around">
+          <div className="carousel-content d-flex justify-content-center">
             <div className="carousel-text">
               <h6 className="text-warning">Melhores ofertas personalizadas</h6>
               <h1>Queima de estoque Nike <span role="img" aria-label="fire">🔥</span></h1>
@@ -25,10 +25,10 @@ const Carrossel = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className="carousel-content justify-content-around">
+          <div className="carousel-content justify-content-center">
             <div className="carousel-text">
               <h6 className="text-warning">Promoções imperdíveis</h6>
-              <h1>Nova coleção Nike <span role="img" aria-label="star">🌟</span></h1>
+              <h1>Nova coleção Nike para aproveitar<span role="img" aria-label="star"> 🌟</span></h1>
               <p>Explore a nova linha de produtos Nike com descontos exclusivos.</p>
               <button className="btn btn-primary">Ver Ofertas</button>
             </div>
@@ -40,7 +40,7 @@ const Carrossel = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className="carousel-content justify-content-around">
+          <div className="carousel-content justify-content-center">
             <div className="carousel-text">
               <h6 className="text-warning">Ofertas Limitadas</h6>
               <h1>Descontos especiais Nike <span role="img" aria-label="tag">✨</span></h1>

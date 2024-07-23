@@ -1,10 +1,9 @@
-/* CustomCarousel.css */
 .carousel-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f8f9fa; /* Cor de fundo do carrossel */
+    background-color: #f8f9fa; 
   }
   
   .carousel-text {
@@ -31,13 +30,13 @@
   
   .carousel-indicators {
     position: absolute;
-    bottom: 20px; /* Ajuste a posição vertical das bolinhas */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre as bolinhas */
-    list-style: none; /* Remove as bullets padrão */
+    gap: 10px; 
+    list-style: none; 
     padding: 0;
     margin: 0;
   }
@@ -45,20 +44,20 @@
   .carousel-indicators [data-bs-target] {
     width: 12px;
     height: 12px;
-    background-color: #ccc; /* Cor padrão das bolinhas */
-    border-radius: 50%; /* Torna as bolinhas redondas */
+    background-color: #ccc; 
+    border-radius: 50%;
     margin: 0 5px;
     transition: background-color 0.3s ease;
-    cursor: pointer; /* Cursor pointer para indicar que é clicável */
+    cursor: pointer;
   }
   
   .carousel-indicators .active {
-    background-color: #ff007f; /* Cor rosa para a bolinha ativa */
+    background-color: #ff007f;
   }
   
   .carousel-image {
-    width: 400px; /* Define a largura desejada */
-    height: auto;  /* Mantém a proporção da imagem */
+    width: 400px;
+    height: auto;  
   }
   
   @media (max-width: 768px) {
@@ -74,8 +73,8 @@
     }
     
     .carousel-image {
-      width: 250px; /* Ajusta o tamanho da imagem em telas menores */
-      margin: 0 auto; /* Centraliza a imagem */
+      width: 250px; 
+      margin: 0 auto; 
     }
   }
   

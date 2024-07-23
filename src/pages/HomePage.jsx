@@ -4,7 +4,7 @@ import Section from "../compoments/section/Section";
 import CallToAction from "../compoments/callAction/CallAction";
 import Gallery from "../compoments/Gallery/gallery";
 import Colecoes from "../compoments/Colecoes/Colecoes";
-import Carrossel from "../compoments/carrossel/Carrossel";
+import Carrossel from "../compoments/carrossel/carrossel";
 
 
 const HomePage = () => {
