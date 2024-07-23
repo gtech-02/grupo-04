@@ -1,9 +1,8 @@
-
-
 .card-img-top {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    /* padding: 20px; */
+    width: 265px;
+    height: 255px;
+    object-fit: contain;
+
 }
 
 .card-body {

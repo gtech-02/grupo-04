@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductImage from './ProductImage';
 import ProductRating from './ProductRating';
@@ -10,35 +10,40 @@ import ProductThumbnails from './ProductThumbnails';
 import './productDetails.css';
 import { produto } from '../Product';
 
-
 const ProductDetails = () => {
-  
   const { id } = useParams();
   const [currentImage, setCurrentImage] = useState('');
-  const product = produto.find((p) => p.id === parseInt(id));
+  const [product, setProduct] = useState(null);
 
+  useEffect(() => {
+    const foundProduct = produto.find((p) => p.id === parseInt(id));
+    if (foundProduct) {
+      setProduct(foundProduct);
+      setCurrentImage(foundProduct.img); // Atualiza a imagem principal ao carregar um novo produto
+    }
+  }, [id]);
 
   if (!product) {
     return <div className="container mt-5">Produto não encontrado.</div>;
   }
 
+  const handleThumbnailClick = (thumbnail) => {
+    setCurrentImage(thumbnail);
+  };
 
-  if (!currentImage) {
-    setCurrentImage(product.img);
-  }
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
-});
+  });
 
   return (
     <div className="product-details-page">
       <div className="product-container">
         <div className='images-container'>
-          <ProductImage mainImage={product.img} />
+          <ProductImage mainImage={currentImage} />
           <ProductThumbnails
             thumbnails={product.thumbnails}
-            onThumbnailClick={setCurrentImage}
+            onThumbnailClick={handleThumbnailClick}
           />
         </div>
         <div className="product-details">
