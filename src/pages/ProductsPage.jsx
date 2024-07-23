@@ -1,10 +1,11 @@
 import Layout from "../compoments/Layout";
-import ProductPageComp from '../compoments/ProductPage/ProductPageComp'
+import ProducListing from "../compoments/ProductListing/ProductListing";
+
 const ProductPage = () => {
   return (
     <>
       <Layout>
-        <ProductPageComp />
+        <ProducListing quantidade={9} />
       </Layout>
     </>
   );
