@@ -11,7 +11,7 @@ const OrderDropdown = () => {
   };
 
   return (
-    <div className="d-flex align-items-center p-3" style={{ marginLeft: '-25px', marginBlock: '20px' }}>
+    <div className="d-flex align-items-center p-3" style={{ marginLeft: '-20px', marginBlock: '20px' }}>
       <strong className="me-2">Ordenar por:</strong>
       <DropdownButton
         id="dropdown-order"

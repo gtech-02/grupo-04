@@ -1,5 +1,5 @@
 import Layout from "../compoments/Layout";
-import OrderDropdown from "../compoments/filtergroup/Order";
+import OrderDropdown from "../compoments/filtergroup/Order"
 import FilterGroup from "../compoments/filtergroup/FilterGroup";
 import ProducListing from "../compoments/ProductListing/ProductListing";
 import Section from "../compoments/section/Section"
