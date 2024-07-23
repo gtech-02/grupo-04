@@ -4,30 +4,30 @@ import Section from "../compoments/section/Section";
 import CallToAction from "../compoments/callAction/CallAction";
 import Gallery from "../compoments/Gallery/gallery";
 import Colecoes from "../compoments/Colecoes/Colecoes";
-import Carrossel from "../compoments/carrossel/carrossel";
+import Carrossel from "../compoments/carrossel/Carrossel";
 
 
 const HomePage = () => {
 
-    return ( 
+    return (
         <>
-        <Layout>
-        <Carrossel/>
-        <Gallery/>
-        <Colecoes/>
-        <Section >
-        <ProducListing quantidade={8}/>
-        </Section>
-        <CallToAction/>
-        </Layout>
-        
+            <Layout>
+                <Carrossel />
+                <Gallery />
+                <Colecoes />
+                <Section title={"Produtos em alta"} linkText={"Ver Todos"}>
+                    <ProducListing quantidade={8} />
+                </Section>
+                <CallToAction />
+            </Layout>
+
         </>
 
-        
-     );
+
+    );
 }
 
- 
+
 export default HomePage;
 
 

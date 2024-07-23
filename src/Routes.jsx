@@ -6,12 +6,12 @@ import ProductsPage from './pages/ProductsPage';
 
 
 const Rotas = () => {
-    return ( 
+    return (   
         <Router>
         <Routes>
             <Route exact path="/home" element={<HomePage />} />
-            <Route path="/products" element={<ProductViewPage/>} />
-            <Route path="/categories" element={<ProductListiningPage />} />
+            <Route path="/products" element={<ProductListiningPage/>} />
+            <Route path="/categories" element={<ProductViewPage />} />
             <Route path="/products-page" element={<ProductsPage />} />
             <Route path='*' element={<Navigate to='/home' />} />
         </Routes>

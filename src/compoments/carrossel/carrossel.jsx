@@ -1,46 +1,61 @@
-import React, { useState } from 'react';
-import image1 from '../../../public/home-slide-4.jpeg'
-import image2 from '../../../public/home-slide-5.jpeg'
-import image3 from '../../../public/home-slide-6.jpeg'
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import './Carrossel.css';
+
 const Carrossel = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  
-  const imagens = [
-    '../../../public/home-slide-4.jpeg',
-    '../../../public/home-slide-5.jpeg',
-    '../../../public/home-slide-6.jpeg'
-  ];
-
-  const handlePrev = () => {
-    const newIndex = (activeIndex === 0) ? imagens.length - 1 : activeIndex - 1;
-    setActiveIndex(newIndex);
-  };
-
-  const handleNext = () => {
-    const newIndex = (activeIndex === imagens.length - 1) ? 0 : activeIndex + 1;
-    setActiveIndex(newIndex);
-  };
-
-  return (
-    <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner">
-        {imagens.map((imagem, index) => (
-          <div key={index} className={`carousel-item ${index === activeIndex ? 'active' : ''}`}>
-            <img src={imagem} className="d-block w-100" alt={`Imagem ${index + 1}`} />
+    return (
+      <Carousel
+        indicators={true}  // Mostrar indicadores
+        controls={false}   // Ocultar setas de controle
+        interval={3000}    // Tempo entre slides (em milissegundos)
+      >
+        <Carousel.Item>
+          <div className="carousel-content d-flex justify-content-around">
+            <div className="carousel-text">
+              <h6 className="text-warning">Melhores ofertas personalizadas</h6>
+              <h1>Queima de estoque Nike <span role="img" aria-label="fire">🔥</span></h1>
+              <p>Consequat culpa exercitation mollit nisi except eur do do tempor laboris eiusmod irure consectetur.</p>
+              <button className="btn btn-primary">Ver Ofertas</button>
+            </div>
+            <img
+              className="carousel-image img-fluid"
+              src="https://static.vecteezy.com/system/resources/thumbnails/027/314/423/small_2x/tennis-racket-with-ball-isolated-sports-fitness-and-game-symbol-icon-3d-render-illustration-png.png" // Substitua pelo link da imagem do tênis
+              alt="Nike Shoes"
+            />
           </div>
-        ))}
-      </div>
-      <button className="carousel-control-prev" type="button" onClick={handlePrev} data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" onClick={handleNext} data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>
-  );
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="carousel-content justify-content-around">
+            <div className="carousel-text">
+              <h6 className="text-warning">Promoções imperdíveis</h6>
+              <h1>Nova coleção Nike <span role="img" aria-label="star">🌟</span></h1>
+              <p>Explore a nova linha de produtos Nike com descontos exclusivos.</p>
+              <button className="btn btn-primary">Ver Ofertas</button>
+            </div>
+            <img
+              className="carousel-image"
+              src="https://static.vecteezy.com/system/resources/previews/011/998/073/original/3d-render-sport-shoes-illustration-png.png" // Substitua pelo link da imagem do segundo tênis
+              alt="Nike Shoes"
+            />
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="carousel-content justify-content-around">
+            <div className="carousel-text">
+              <h6 className="text-warning">Ofertas Limitadas</h6>
+              <h1>Descontos especiais Nike <span role="img" aria-label="tag">✨</span></h1>
+              <p>Não perca as ofertas de tempo limitado em produtos Nike.</p>
+              <button className="btn btn-primary">Ver Ofertas</button>
+            </div>
+            <img
+              className="carousel-image img-fluid"
+              src="https://17889.cdn.simplo7.net/static/17889/sku/mulheres-tenis-tenis-nike-dc3729-003-revolution-6-preto-branco-1698772900507.png" // Substitua pelo link da imagem do terceiro tênis
+              alt="Nike Shoes"
+            />
+          </div>
+        </Carousel.Item>
+      </Carousel>
+    );
+  };
   
-}
-
-export default Carrossel;
+  export default Carrossel;

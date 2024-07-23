@@ -48,3 +48,7 @@ input[type="search"]::-moz-search-cancel-button {
   -webkit-appearance: none;
   appearance: none;
 }
+
+#navbar-item{
+  margin-left: -25px;
+}
