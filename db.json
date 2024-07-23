@@ -1,9 +1,31 @@
-{
-    "products": [
-      { "id": 1, "name": "nike" },
-      { "id": 2, "name": "adidas" },
-      { "id": 3, "name": "puma" },
-      { "id": 4, "name": "centauro" }
-    ]
+[ {
+    "id": 1,
+    "name": "Tênis Nike Revolution 6 Next Nature Masculino",
+    "category": "Casual | Nike | REF:38416711",
+    "rating": 4,
+    "reviews": 90,
+    "price": 219.0,
+    "originalPrice": 350.0,
+    "installment": 1789.99,
+    "description": "O Tênis Masculino Nike Revolution 6 Next Nature revisita o original icônico com linhas de design modernas e amortecimento super leve. O amortecimento Air-Sole revolucionário da Nike foi introduzido nos calçados Nike em 1978.",
+    "sizes": [39, 40, 41, 42, 43],
+    "colors": ["#3498db", "#2ecc71", "#e74c3c", "#f39c12", "#9b59b6"],
+    "img": "https://m.media-amazon.com/images/I/71ARX0SJ4rL._AC_SY695_.jpg",
+    "thumbnails": ["", "", "", ""]
+  },
+  {
+    "id": 2,
+    "name": "Camisa Nike Dri-FIT Masculina",
+    "category": "Esportiva | Nike | REF:23456789",
+    "rating": 5,
+    "reviews": 120,
+    "price": 159.0,
+    "originalPrice": 250.0,
+    "installment": 1329.99,
+    "description": "A Camisa Nike Dri-FIT oferece conforto e tecnologia para treinos intensos. Feita com tecido que absorve o suor e mantém você seco, ideal para atividades físicas.",
+    "sizes": ["P", "M", "G", "GG"],
+    "colors": ["#ff5733", "#33ff57", "#3357ff", "#f4c542", "#a142f4"],
+    "img": "https://m.media-amazon.com/images/I/611KgyJXPzL._AC_SY695_.jpg",
+    "thumbnails": ["", "", "", ""]
   }
-  
+]
