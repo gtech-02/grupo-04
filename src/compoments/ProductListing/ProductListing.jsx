@@ -15,4 +15,3 @@ export default function ProducListing({ quantidade }) {
     return <div className="row container mx-auto justify-content-center">{cards}</div>
 
 }
-
