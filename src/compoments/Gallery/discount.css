@@ -4,7 +4,8 @@
     color: rgb(0, 0, 0); /* Cor do texto preto para contraste */
     border: none;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 10px;
+    padding: 0px 5px;
 }
 
 .btn-yellow:hover {
