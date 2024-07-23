@@ -12,7 +12,7 @@ const ProductListiningPage = () => {
                 <div className="container">
                     <OrderDropdown />
                     <div className="row">
-                        <div className="col-md-2 col-sm-12" style={{padding: '10px' }}>
+                        <div className="col-md-2 col-sm-12" style={{ padding: '10px' }}>
                             <h5 className='fw-bold'>Filtrar por</h5>
                             <hr />
                             <FilterGroup titulo={"Marcas"} itens={["Adidas", "Nike", "Puma", "Reebok"]} />
@@ -21,10 +21,9 @@ const ProductListiningPage = () => {
                             <FilterGroup titulo={"Estado"} itens={["Novo", "Usado"]} formato="rounded-circle" />
 
                         </div>
-                        <div className="col-md-10 col-sm-12" style={{padding: '10px' }}>
+                        <div className="col-md-10 col-sm-12" style={{ padding: '10px' }}>
                             <Section>
-                                <ProducListing quantidade={6} />
-                                <ProducListing quantidade={6} />
+                                <ProducListing quantidade={12} />
                             </Section>
                         </div>
                     </div>

@@ -195,3 +195,27 @@ body {
 .rating {
     color: #daa403;
 }
+
+.star {
+    color: #ddd;
+    font-size: 20px;
+    margin-right: 2px;
+  }
+  
+  .filled {
+    color: #ffd700;
+  }
+  
+  .product-rating {
+    display: flex;
+    align-items: center;
+  }
+  .product-rating P {
+    margin-top: 13px;
+  }
+  
+  .avaliacao {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #555
+  }

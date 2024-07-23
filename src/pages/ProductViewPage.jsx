@@ -2,15 +2,18 @@ import Layout from "../compoments/Layout";
 import ProducListing from "../compoments/ProductListing/ProductListing";
 import Section from "../compoments/section/Section"
 import ProductDetails from "../compoments/productDetails/ProductDetails"
+import ProductCarousel from "../compoments/productDetails/productCarrossel/ProductCarrossel";
+import { produto } from "../compoments/Product";
 const ProductViewPage = () => {
   return (
     <>
       <Layout>
-        <ProductDetails/>
+        <ProductDetails />
         <Section title={"Produtos em alta"} linkText={"Ver Todos"}>
           <ProducListing quantidade={4} />
         </Section>
       </Layout>
+      <ProductCarousel images = {produto[0].thumbnails}/>
     </>
   );
 }

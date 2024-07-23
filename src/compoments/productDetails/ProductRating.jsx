@@ -1,10 +1,12 @@
 import React from 'react';
+import './productDetails.css';
 
 const ProductRating = ({ rating, reviews }) => {
   const stars = [];
+
   for (let i = 0; i < 5; i++) {
     stars.push(
-      <span key={i} className={i < rating ? 'estrelas' : ''}>
+      <span key={i} className={`star ${i < rating ? 'filled' : ''}`}>
         &#9733;
       </span>
     );
