@@ -1,10 +1,13 @@
 .btn-yellow {
-    background-color: yellow; /* Cor de fundo amarela */
-    color: black; /* Cor do texto preto para contraste */
-    border: none; /* Remove a borda, se necessário */
+    
+    background-color: rgb(208, 208, 62); /* Cor de fundo amarela */
+    color: rgb(0, 0, 0); /* Cor do texto preto para contraste */
+    border: none;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 .btn-yellow:hover {
-    background-color: #f4c542; /* Cor de fundo ao passar o mouse (amarelo mais escuro) */
-    color: black; /* Cor do texto ao passar o mouse */
+    background-color: #cfb15f; /* Cor de fundo ao passar o mouse (amarelo mais escuro) */
+    color: rgb(21, 20, 20); /* Cor do texto ao passar o mouse */
 }
