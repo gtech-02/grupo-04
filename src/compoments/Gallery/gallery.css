@@ -1,0 +1,15 @@
+.agrupar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-group{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+}
+.card{
+    margin: 10px;
+    border-radius: 10px;
+}

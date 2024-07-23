@@ -5,9 +5,9 @@
   }
   #li-header{
     color: black;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 18px;
-    
+
   }
   #li-header:hover{
     color: #c90071;
@@ -17,3 +17,39 @@
   .li-text:hover{
     color: #c90071;
   }
+
+  .navbar .form-control {
+    width: 500px;
+    background-color: rgb(228, 223, 223);
+    height: 45px;
+}
+
+.icon-search {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 458px;
+    cursor: pointer;
+}
+
+.btn-custom {
+    margin-left: 15px;
+    padding: 5px 20px;
+    background-color: #c90071;
+    border: none;
+}
+
+  /* Remover o X do campo de entrada em navegadores Webkit (Chrome, Safari, etc.) */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Remover o X do campo de entrada em navegadores Firefox */
+input[type="search"]::-moz-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#navbar-item{
+  margin-left: -25px;
+}

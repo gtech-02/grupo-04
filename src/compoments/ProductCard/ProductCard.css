@@ -1,0 +1,33 @@
+
+
+.card-img-top {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* padding: 20px; */
+}
+
+.card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-text {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: black;
+    font-weight: bold;
+}
