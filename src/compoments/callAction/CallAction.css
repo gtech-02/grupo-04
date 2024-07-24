@@ -1,5 +1,3 @@
-/* CallToAction.css */
-
 .call-to-action {
     padding: 2rem 0;
   }
@@ -12,7 +10,7 @@
   }
   
   .call-to-action__highlight {
-    color: #d10062; /* Ajuste a cor conforme necessário */
+    color: #d10062; 
     font-weight: 500;
     display: block;
     margin-bottom: 1rem;
@@ -31,7 +29,7 @@
   }
   
   .call-to-action__button {
-    background-color: #d10062; /* Ajuste a cor conforme necessário */
+    background-color: #d10062; 
     border: none;
     padding: 0.75rem 1.5rem;
     font-weight: 500;

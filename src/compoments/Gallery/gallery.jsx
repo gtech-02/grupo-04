@@ -17,7 +17,7 @@ const Gallery = () => {
           className="card-img-top"
           alt="Imagem 1"
         />
-       <a href="#" class="btn btn-primary position-absolute bottom-0 start-0 m-3">Detalhes</a>
+       <a href="#" class="btn btn-primary bg-white position-absolute bottom-0 start-0 m-3">Comprar</a>
        <Discount/>
       </div>
       <div className="card">
@@ -27,7 +27,7 @@ const Gallery = () => {
           className="card-img-top"
           alt="Imagem 2"
         />
-       <a href="#" class="btn btn-primary position-absolute bottom-0 start-0 m-3">Detalhes</a>
+       <a href="#" class="btn btn-primary bg-white position-absolute bottom-0 start-0 m-3">Comprar</a>
        <Discount/>
       </div>
       <div className="card">
@@ -36,7 +36,7 @@ const Gallery = () => {
           className="card-img-top"
           alt="Imagem 3"
         /> 
-        <a href="#" class="btn btn-primary position-absolute bottom-0 start-0 m-3">Detalhes</a>
+        <a href="#" class="btn btn-primary bg-white position-absolute bottom-0 start-0 m-3">Comprar</a>
         <Discount/>
       </div>
       </div>

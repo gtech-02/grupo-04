@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 
-const OrderDropdown = () => {
-
-  const [selectedOption, setSelectedOption] = useState('mais relevantes');
-
+const OrderDropdown = ({ onOrderChange }) => {
+  const [selectedOption, setSelectedOption] = useState('Mais relevantes');
 
   const handleSelect = (eventKey) => {
     setSelectedOption(eventKey);
+    onOrderChange(eventKey);
   };
 
   return (
@@ -15,13 +14,13 @@ const OrderDropdown = () => {
       <strong className="me-2">Ordenar por:</strong>
       <DropdownButton
         id="dropdown-order"
-        title={selectedOption} 
-        variant="outline-secondary" 
-        onSelect={handleSelect} 
+        title={selectedOption}
+        variant="outline-secondary"
+        onSelect={handleSelect}
       >
-        <Dropdown.Item eventKey="mais relevantes">Mais relevantes</Dropdown.Item>
-        <Dropdown.Item eventKey="menor preço">Menor preço</Dropdown.Item>
-        <Dropdown.Item eventKey="maior preço">Maior preço</Dropdown.Item>
+        <Dropdown.Item eventKey="Mais relevantes">Mais relevantes</Dropdown.Item>
+        <Dropdown.Item eventKey="Menor preço">Menor preço</Dropdown.Item>
+        <Dropdown.Item eventKey="Maior preço">Maior preço</Dropdown.Item>
       </DropdownButton>
     </div>
   );
