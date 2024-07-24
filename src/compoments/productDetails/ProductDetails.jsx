@@ -51,9 +51,10 @@ const ProductDetails = () => {
           <h2>{product.category}</h2>
           <ProductRating rating={product.rating} reviews={product.reviews} />
           <ProductPrice
-            price={product.price}
+            discountValue={product.discountValue}
             originalPrice={product.originalPrice}
             installment={product.installment}
+            discount={product.discount}
           />
           <ProductDescription description={product.description} />
           <ProductVariations sizes={product.sizes} colors={product.colors} />

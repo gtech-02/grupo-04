@@ -13,7 +13,8 @@ export const produto = [
     colors: ['#3498db', '#2ecc71', '#e74c3c', '#f39c12', '#9b59b6'],
     img: 'https://m.media-amazon.com/images/I/61KUcjb+paL._AC_SY575_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/61KUcjb+paL._AC_SY575_.jpg', 'https://m.media-amazon.com/images/I/61-fXrEPqWL._AC_SY575_.jpg', 'https://m.media-amazon.com/images/I/71vRmCR3ykL._AC_SY575_.jpg'],
-    discount: true
+    discount: true,
+    discountValue: 30
   },
   {
     id: 2,
@@ -29,7 +30,8 @@ export const produto = [
     colors: ['#ff5733', '#33ff57', '#3357ff', '#f4c542', '#a142f4'],
     img: 'https://m.media-amazon.com/images/I/51sIEgkaztL._AC_SX679_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/51sIEgkaztL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/513aKh4aliL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/51iMtyZV3PL._AC_SX679_.jpg'],
-    discount: true
+    discount: true,
+    discountValue: 50
   },
   {
     id: 3,
@@ -45,7 +47,8 @@ export const produto = [
     colors: ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd'],
     img: 'https://m.media-amazon.com/images/I/51n61hOnQ3L._AC_SX679_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/51n61hOnQ3L._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/51u4P9-AF-L._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/51weT3D9GKL._AC_SX679_.jpg'],
-    discount: true
+    discount: true,
+    discountValue: 60
   },
   {
     id: 4,
@@ -61,7 +64,8 @@ export const produto = [
     colors: ['#e5e5e5', '#000000', '#ff0050', '#008000', '#0000ff'],
     img: 'https://m.media-amazon.com/images/I/612e031jM6L._AC_SX679_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/612e031jM6L._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/61+XOCeVRfL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/61u9Ry46tqL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/518H39CF8VL._AC_SX679_.jpg'],
-    discount: false
+    discount: false,
+    discountValue: 0
   },
   {
     id: 5,
@@ -77,7 +81,8 @@ export const produto = [
     colors: ['#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f'],
     img: 'https://m.media-amazon.com/images/I/61In1Kw6cWL._AC_SY575_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/61In1Kw6cWL._AC_SY575_.jpg', 'https://m.media-amazon.com/images/I/61lXmqNnmVL._AC_SY575_.jpg', 'https://m.media-amazon.com/images/I/61ru4HQpscL._AC_SY575_.jpg'],
-    discount: false
+    discount: false,
+    discountValue: 0
   },
   {
     id: 6,
@@ -93,7 +98,8 @@ export const produto = [
     colors: ['#ffcc00', '#00ffcc', '#cc00ff', '#ff3300', '#3399ff'],
     img: 'https://m.media-amazon.com/images/I/71dRotcBx+L._AC_SY695_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/71dRotcBx+L._AC_SY695_.jpg', 'https://m.media-amazon.com/images/I/61zBsmXRoKL._AC_SY575_.jpg', 'https://m.media-amazon.com/images/I/71a1wuejjOL._AC_SY575_.jpg'],
-    discount: true
+    discount: true,
+    discountValue: 30
   },
   {
     id: 7,
@@ -109,7 +115,8 @@ export const produto = [
     colors: ['#f4a582', '#2ca02c', '#d62728', '#7f7f7f', '#1f77b4'],
     img: 'https://m.media-amazon.com/images/I/61Ht6pj0JiL._AC_SX675_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/61Ht6pj0JiL._AC_SX675_.jpg', 'https://m.media-amazon.com/images/I/71tLhD5U5SL._AC_SX575_.jpg', 'https://m.media-amazon.com/images/I/71JVfLozKkL._AC_SX575_.jpg'],
-    discount: false
+    discount: false,
+    discountValue: 0
   },
   {
     id: 8,
@@ -125,7 +132,8 @@ export const produto = [
     colors: ['#e6e6e6', '#ff5722', '#009688', '#3f51b5', '#cddc39'],
     img: 'https://m.media-amazon.com/images/I/61f8dsHxBFL._AC_SX569_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/61f8dsHxBFL._AC_SX569_.jpg', 'https://m.media-amazon.com/images/I/616zAIR1BKL._AC_SX569_.jpg', 'https://m.media-amazon.com/images/I/61fSQbqBOML._AC_SX569_.jpg'],
-    discount: true
+    discount: true,
+    discountValue: 50
   },
   {
     id: 9,
@@ -141,7 +149,8 @@ export const produto = [
     colors: ['#000000', '#ffffff', '#e57373', '#81c784', '#64b5f6'],
     img: 'https://m.media-amazon.com/images/I/81xR5DygQiL._AC_SX679_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/81xR5DygQiL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/91SrHs1ihpL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/81KDpEQiSHL._AC_SX679_.jpg'],
-    discount: false
+    discount: false,
+    discountValue: 0
   },
   {
     id: 10,
@@ -157,7 +166,8 @@ export const produto = [
     colors: ['#ff2d55', '#5ac8fa', '#4cd964', '#ffcc00', '#5856d6'],
     img: 'https://m.media-amazon.com/images/I/71TJ7RNXvbL._AC_SX675_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/71TJ7RNXvbL._AC_SX675_.jpg', 'https://m.media-amazon.com/images/I/71t8Fe4nNIL._AC_SY695_.jpg', 'https://m.media-amazon.com/images/I/71pl8WE5vuL._AC_SX575_.jpg'],
-    discount: false
+    discount: false,
+    discountValue: 0
   },
   {
     id: 11,
@@ -173,7 +183,8 @@ export const produto = [
     colors: ['#00bcd4', '#ff4081', '#8bc34a', '#ff9800', '#9c27b0'],
     img: 'https://m.media-amazon.com/images/I/61He4sTUIHL._AC_SX679_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/61He4sTUIHL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/61aEzLXHSsL._AC_SX569_.jpg', 'https://m.media-amazon.com/images/I/61gN20VZKUL._AC_SX569_.jpg'],
-    discount: true
+    discount: true,
+    discountValue: 60
   },
   {
     id: 12,
@@ -189,6 +200,7 @@ export const produto = [
     colors: ['#ffcc00', '#00ffcc', '#ff6600', '#cc00ff', '#99cc00'],
     img: 'https://m.media-amazon.com/images/I/71fDJtKqrnL._AC_SX675_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/71fDJtKqrnL._AC_SX675_.jpg', 'https://m.media-amazon.com/images/I/71a7m1ZQdrL._AC_SX575_.jpg', 'https://m.media-amazon.com/images/I/71vmxuU-6jL._AC_SX575_.jpg'],
-    discount: true
+    discount: true,
+    discountValue: 30
   }
 ];
