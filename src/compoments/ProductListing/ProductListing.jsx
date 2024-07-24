@@ -3,7 +3,7 @@ import './ProductListing.css';
 import Card from "../../compoments/ProductCard/ProductCard.jsx";
 import { produto } from '../Product';
 
-export default function ProductListing({ quantidade, ordenacao }) {
+export default function ProductListing({ quantidade, ordenacao, searchQuery }) {
   if (!produto || !Array.isArray(produto)) {
     return <p>Produtos não disponíveis.</p>;
   }
@@ -34,7 +34,15 @@ export default function ProductListing({ quantidade, ordenacao }) {
     return produtosOrdenados;
   };
 
-  const produtosOrdenados = ordenarProdutos(produto, ordenacao);
+  const produtosFiltrados = produto.filter((item) =>
+    item.category && item.category.toLowerCase().includes((searchQuery || '').toLowerCase())
+  );
+
+  const produtosParaExibir = produtosFiltrados.length === 0 ? produto : produtosFiltrados;
+
+  
+
+  const produtosOrdenados = ordenarProdutos(produtosParaExibir,produtosFiltrados,produto, ordenacao);
 
   const produtosExibidos = produtosOrdenados.slice(0, quantidade);
 
