@@ -13,10 +13,17 @@ const ProductRating = ({ rating, reviews }) => {
   }
 
   return (
-    <div className="product-rating">
+    <div className="product-rating ">
       <div className="rating">{stars}</div>
-      <div className="avaliacao">
+      <div className="avaliacao d-flex align-items-center">
         <p>({reviews} avaliações)</p>
+        <div id="ratingblock">
+          <p>{rating}
+            <span id='starblock'>
+              &#9733;
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   );

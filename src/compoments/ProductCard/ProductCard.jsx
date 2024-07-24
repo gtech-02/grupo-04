@@ -1,10 +1,12 @@
 import React from 'react';
 import './ProductCard.css';
 import { Link } from 'react-router-dom';
+import Discount from '../Gallery/discount'
 
 export default function Card({ produto }) {
     return (
         <div className="card" style={{ width: '18rem', margin: '20px auto' }}>
+            {produto.discount && <Discount />}
             <Link to={`/ProductViewPage/${produto.id}`} className="card-link">
                 <img src={produto.img} className="card-img-top" alt={produto.name} />
             </Link>
