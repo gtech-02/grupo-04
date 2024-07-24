@@ -1,4 +1,4 @@
-.card-img-top {
+#imagemcard {
     width: 265px;
     height: 255px;
     object-fit: contain;
@@ -29,4 +29,7 @@
 .new-price {
     color: black;
     font-weight: bold;
+}
+.card{
+    box-shadow: 0px 0px 5px 1px rgba(155, 151, 151, 0.87);
 }

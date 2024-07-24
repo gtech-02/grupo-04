@@ -1,11 +1,14 @@
 .btn-yellow {
     
-    background-color: rgb(208, 208, 62); /* Cor de fundo amarela */
+    background-color:  #e4fc84; /* Cor de fundo amarela */
     color: rgb(0, 0, 0); /* Cor do texto preto para contraste */
     border: none;
     margin-top: 5px;
     margin-left: 10px;
-    padding: 0px 5px;
+    padding: 5px 10px;
+    border-radius: 30%;
+    font-size: small;
+    font-weight: bold;
 }
 
 .btn-yellow:hover {

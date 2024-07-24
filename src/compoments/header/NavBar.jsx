@@ -45,7 +45,7 @@ const NavBar = () => {
 
                     <div>
                         <a href="#" className="link-secondary">
-                            Cadastrar
+                            Cadastre-se
                         </a>
                         <button
                             type="button"
