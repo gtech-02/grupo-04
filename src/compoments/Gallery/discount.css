@@ -1,7 +1,7 @@
-.btn-yellow {
+.btn-yellow,.btn-danger {
     
-    background-color:  #e4fc84; /* Cor de fundo amarela */
-    color: rgb(0, 0, 0); /* Cor do texto preto para contraste */
+    background-color:  #e4fc84; 
+    color: rgb(0, 0, 0); 
     border: none;
     margin-top: 5px;
     margin-left: 10px;
@@ -10,8 +10,12 @@
     font-size: small;
     font-weight: bold;
 }
+.btn-danger{
+    background-color: rgb(238, 52, 19);
+    color: white;
+}
 
 .btn-yellow:hover {
-    background-color: #cfb15f; /* Cor de fundo ao passar o mouse (amarelo mais escuro) */
-    color: rgb(21, 20, 20); /* Cor do texto ao passar o mouse */
+    background-color: #cfb15f;
+    color: rgb(21, 20, 20); 
 }
