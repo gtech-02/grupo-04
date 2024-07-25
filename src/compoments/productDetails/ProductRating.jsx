@@ -16,7 +16,6 @@ const ProductRating = ({ rating, reviews }) => {
     <div className="product-rating ">
       <div className="rating">{stars}</div>
       <div className="avaliacao d-flex align-items-center">
-        <p>({reviews} avaliações)</p>
         <div id="ratingblock">
           <p>{rating}
             <span id='starblock'>

@@ -228,14 +228,14 @@ text-decoration: line-through;
 
   #ratingblock{
     background-color: #ffd700;
-    width: 42px;
-    height: 30px;
+    width: 40px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin-left: 8px;
+    border-radius: 8px;
     color: #f5f5f5;
+    box-shadow: 1px 1px 1px 1px #b6b2b2;
   }
   #starblock{
     color: #ffffff;

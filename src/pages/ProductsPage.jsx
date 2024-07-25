@@ -9,7 +9,7 @@ const ProductPage = () => {
   return (
     <>
       <Layout>
-        <ProducListing quantidade={9} searchQuery={searchQuery} />
+        <ProducListing quantidade={12} searchQuery={searchQuery} />
       </Layout>
     </>
   );

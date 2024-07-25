@@ -3,6 +3,7 @@ import './ProductCard.css';
 import { Link } from 'react-router-dom';
 import Discount from '../Gallery/discount'
 import ProductRating from '../productDetails/ProductRating';
+import { produto } from '../../../json/Product';
 
 export default function Card({ produto }) {
     return (
@@ -27,6 +28,7 @@ export default function Card({ produto }) {
                     )}
 
                 </p>
+                <ProductRating rating= {produto.rating}/>
             </div>
         </div>
     );
