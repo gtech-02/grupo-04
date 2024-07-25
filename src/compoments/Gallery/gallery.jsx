@@ -1,7 +1,7 @@
 import React from 'react';
 import './gallery.css';
 import Discount from './discount';
-g
+
 const Gallery = () => {
   return (
   <div className='agrupar'>
