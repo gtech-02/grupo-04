@@ -2,11 +2,12 @@ import React from 'react';
 import './ProductCard.css';
 import { Link } from 'react-router-dom';
 import Discount from '../Gallery/discount'
+import ProductRating from '../productDetails/ProductRating';
 
 export default function Card({ produto }) {
     return (
         <div className="card" style={{ width: '18rem', margin: '20px auto' }}>
-            {produto.discount && <Discount desconto = {produto.discountValue}/>}
+            {produto.discount && <Discount desconto={produto.discountValue} />}
             <Link to={`/ProductViewPage/${produto.id}`} className="card-link">
                 <img id="imagemcard" src={produto.img} className="card-img-top" alt={produto.name} />
             </Link>
@@ -14,13 +15,15 @@ export default function Card({ produto }) {
                 <p className="card-text text-muted">{produto.category}</p>
                 <h5 className="card-title">{produto.name}</h5>
                 <p>
-                    {produto.discount ? (
+                    {produto.discount && produto.discountValue >= 1 && produto.discountValue <= 99 ? (
                         <>
-                            <span className="old-price">R$ {produto.originalPrice}</span>
-                            <span className="new-price">R$ {produto.originalPrice - (produto.originalPrice * produto.discountValue / 100)}</span>
+                            <span className="old-price">R$ {produto.originalPrice.toFixed(2)}</span>
+                            <span className="new-price">
+                                R$ {(produto.originalPrice - (produto.originalPrice * produto.discountValue / 100)).toFixed(2)}
+                            </span>
                         </>
                     ) : (
-                        <span className="new-price">R$ {produto.originalPrice}</span>
+                        <span className="new-price">R$ {produto.originalPrice.toFixed(2)}</span>
                     )}
 
                 </p>

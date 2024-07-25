@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductListing.css';
 import Card from "../../compoments/ProductCard/ProductCard.jsx";
-import { produto } from '../Product';
+import { produto } from '../../../json/Product';
 
 export default function ProductListing({ quantidade, ordenacao }) {
   if (!produto || !Array.isArray(produto)) {
@@ -27,6 +27,8 @@ export default function ProductListing({ quantidade, ordenacao }) {
         produtosOrdenados.sort((a, b) => calcularPrecoComDesconto(b) - calcularPrecoComDesconto(a));
         break;
       case 'Mais relevantes':
+        produtosOrdenados.sort((a, b) => b.rating - a.rating);
+        break;
       default:
         break;
     }

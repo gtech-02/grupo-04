@@ -1,10 +1,7 @@
 import React from 'react';
 import './gallery.css';
 import Discount from './discount';
-{/* <div class="d-flex justify-content-end mb-3">
-    <button type="button" class="btn btn-primary">Direita</button>
-    <button type="button" class="btn btn-secondary">Direita</button>
-  </div> */}
+g
 const Gallery = () => {
   return (
   <div className='agrupar'>

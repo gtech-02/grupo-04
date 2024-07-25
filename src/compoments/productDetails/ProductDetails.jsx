@@ -8,7 +8,7 @@ import ProductVariations from './ProductVariations';
 import AddToCartButton from './AddToCartButton';
 import ProductThumbnails from './ProductThumbnails';
 import './productDetails.css';
-import { produto } from '../Product';
+import { produto } from '../../../json/Product';
 
 const ProductDetails = () => {
   const { id } = useParams();
