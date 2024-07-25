@@ -49,7 +49,11 @@ const ProductDetails = () => {
         <div className="product-details">
           <h1>{product.name}</h1>
           <h2>{product.category}</h2>
-          <ProductRating rating={product.rating} reviews={product.reviews} />
+
+           <div className="d-flex align-items-center">
+              <ProductRating rating={product.rating} />
+              <span className="ms-2 text-muted">({product.reviews} avaliações)</span>
+            </div>
           <ProductPrice
             discountValue={product.discountValue}
             originalPrice={product.originalPrice}

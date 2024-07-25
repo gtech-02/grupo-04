@@ -65,7 +65,7 @@ export const produto = [
       img: 'https://m.media-amazon.com/images/I/612e031jM6L._AC_SX679_.jpg',
       thumbnails: ['https://m.media-amazon.com/images/I/612e031jM6L._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/61+XOCeVRfL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/61u9Ry46tqL._AC_SX679_.jpg', 'https://m.media-amazon.com/images/I/518H39CF8VL._AC_SX679_.jpg'],
       discount: false,
-      discountValue: 0
+      discountValue: 50
     },
     {
       id: 5,

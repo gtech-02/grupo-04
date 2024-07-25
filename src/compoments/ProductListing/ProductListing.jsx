@@ -37,14 +37,15 @@ export default function ProductListing({ quantidade, ordenacao, searchQuery }) {
   };
 
   const produtosFiltrados = produto.filter((item) =>
-    item.category && item.category.toLowerCase().includes((searchQuery || '').toLowerCase())
+    (item.category && item.category.toLowerCase().includes((searchQuery || '').toLowerCase())) ||
+    (item.name && item.name.toLowerCase().includes((searchQuery || '').toLowerCase()))
   );
 
+  // Usar produtosFiltrados se houver resultado, caso contrário, usar a lista completa
   const produtosParaExibir = produtosFiltrados.length === 0 ? produto : produtosFiltrados;
 
-  
-
-  const produtosOrdenados = ordenarProdutos(produtosParaExibir,produtosFiltrados,produto, ordenacao);
+  // Corrigir a chamada para ordenarProdutos removendo argumentos extras
+  const produtosOrdenados = ordenarProdutos(produtosParaExibir, ordenacao);
 
   const produtosExibidos = produtosOrdenados.slice(0, quantidade);
 
