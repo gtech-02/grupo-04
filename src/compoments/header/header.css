@@ -59,3 +59,7 @@ input[type="search"]::-moz-search-cancel-button {
   margin-top: 7px;
   text-align: center;
 }
+
+.active-link {
+  color: #c90071; 
+}

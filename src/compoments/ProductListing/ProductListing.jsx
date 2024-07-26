@@ -36,10 +36,12 @@ export default function ProductListing({ quantidade, ordenacao, searchQuery }) {
     return produtosOrdenados;
   };
 
-  const produtosFiltrados = produto.filter((item) =>
-    (item.category && item.category.toLowerCase().includes((searchQuery || '').toLowerCase())) ||
-    (item.name && item.name.toLowerCase().includes((searchQuery || '').toLowerCase()))
-  );
+  const produtosFiltrados = produto.filter((item) => {
+    return (
+      (item.category && item.category.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes((searchQuery || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase())) ||
+      (item.name && item.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes((searchQuery || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()))
+    );
+  });
 
   // Usar produtosFiltrados se houver resultado, caso contrário, usar a lista completa
   const produtosParaExibir = produtosFiltrados.length === 0 ? produto : produtosFiltrados;
