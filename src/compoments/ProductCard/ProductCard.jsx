@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductCard.css';
 import { Link } from 'react-router-dom';
-import Discount from '../Gallery/discount'
+import Discount from '../Gallery/Discount'
 import ProductRating from '../productDetails/ProductRating';
 import { produto } from '../../../json/Product';
 

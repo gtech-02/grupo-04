@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Layout from "../compoments/Layout";
 import OrderDropdown from "../compoments/filtergroup/OrderDropdown";
-import FilterGroup from "../compoments/filtergroup/FilterGroup";
+import FilterGroup from '../compoments/filtergroup/FilterGroup';
 import ProductListing from "../compoments/ProductListing/ProductListing";
-import Section from "../compoments/section/Section";
+import Section from "../compoments/Section/Section";
 
 const ProductListingPage = () => {
   const [ordemDaLista, setOrdemDaLista] = useState('Mais relevantes');
 
-  // Adicionar estados para os filtros
+ 
   const [filtros, setFiltros] = useState({
     Marcas: [],
     Categoria: [],
@@ -16,12 +16,12 @@ const ProductListingPage = () => {
     Estado: [],
   });
 
-  // Função para atualizar os filtros
+  
   const handleFilterChange = (titulo, item) => {
     setFiltros((prevFiltros) => {
       const itensAtualizados = prevFiltros[titulo].includes(item)
-        ? prevFiltros[titulo].filter((i) => i !== item) // Remover item se já estiver selecionado
-        : [...prevFiltros[titulo], item]; // Adicionar item se não estiver selecionado
+        ? prevFiltros[titulo].filter((i) => i !== item)
+        : [...prevFiltros[titulo], item]; 
 
       return {
         ...prevFiltros,

@@ -213,7 +213,7 @@ export const produto = [
     img: 'https://m.media-amazon.com/images/I/71fDJtKqrnL._AC_SX675_.jpg',
     thumbnails: ['https://m.media-amazon.com/images/I/71fDJtKqrnL._AC_SX675_.jpg', 'https://m.media-amazon.com/images/I/71a7m1ZQdrL._AC_SX575_.jpg', 'https://m.media-amazon.com/images/I/71vmxuU-6jL._AC_SX575_.jpg'],
     discount: true,
-    discountValue: 30
+    discountValue: 80
   }
   ];
   

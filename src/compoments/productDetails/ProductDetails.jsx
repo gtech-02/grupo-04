@@ -20,7 +20,7 @@ const ProductDetails = () => {
     const foundProduct = produto.find((p) => p.id === parseInt(id));
     if (foundProduct) {
       setProduct(foundProduct);
-      setCurrentImage(foundProduct.img); // Atualiza a imagem principal ao carregar um novo produto
+      setCurrentImage(foundProduct.img);
     }
   }, [id]);
 

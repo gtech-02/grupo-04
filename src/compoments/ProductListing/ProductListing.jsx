@@ -36,7 +36,7 @@ export default function ProductListing({ quantidade = 12, ordenacao = 'Mais rele
     return produtosOrdenados;
   };
 
-  // Certifique-se de que os filtros têm valores padrão caso não sejam fornecidos
+
   const filtrosAtuais = {
     Marcas: filtros.Marcas || [],
     Categoria: filtros.Categoria || [],
@@ -44,9 +44,20 @@ export default function ProductListing({ quantidade = 12, ordenacao = 'Mais rele
     Estado: filtros.Estado || [],
   };
 
+  
+  const normalizeString = (str) => {
+    return str
+      .normalize('NFD') 
+      .replace(/[\u0300-\u036f]/g, '') 
+      .toLowerCase(); 
+  };
+
   const produtosFiltrados = produto.filter((item) => {
-    const queryMatch = (item.category && item.category.toLowerCase().includes((searchQuery || '').toLowerCase())) ||
-                       (item.name && item.name.toLowerCase().includes((searchQuery || '').toLowerCase()));
+
+    const queryMatch = (
+      (item.category && normalizeString(item.category).includes(normalizeString(searchQuery || ''))) ||
+      (item.name && normalizeString(item.name).includes(normalizeString(searchQuery || '')))
+    );
 
     const filtroMarcas = filtrosAtuais.Marcas.length === 0 || filtrosAtuais.Marcas.includes(item.brand);
     const filtroCategoria = filtrosAtuais.Categoria.length === 0 || filtrosAtuais.Categoria.includes(item.category);
@@ -56,7 +67,6 @@ export default function ProductListing({ quantidade = 12, ordenacao = 'Mais rele
     return queryMatch && filtroMarcas && filtroCategoria && filtroGenero && filtroEstado;
   });
 
-  // Usar produtosFiltrados se houver resultado, caso contrário, usar a lista completa
   const produtosParaExibir = produtosFiltrados.length === 0 ? produto : produtosFiltrados;
 
   const produtosOrdenados = ordenarProdutos(produtosParaExibir, ordenacao);

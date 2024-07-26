@@ -13,7 +13,7 @@ const FilterGroup = ({ titulo, itens, formato, onChange }) => {
               type="checkbox" 
               className={`form-check-input ${formato}`} 
               id={`item-${titulo}-${index}`} 
-              onChange={() => onChange(titulo, item)} // Chamar onChange
+              onChange={() => onChange(titulo, item)}
             />
             <label className="form-check-label" htmlFor={`item-${titulo}-${index}`}>
               {item}

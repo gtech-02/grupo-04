@@ -1,6 +1,6 @@
 import React from 'react';
 import './gallery.css';
-import Discount from './discount';
+import Discount from './Discount';
 
 const Gallery = ({ galleryImage }) => {
   return (
