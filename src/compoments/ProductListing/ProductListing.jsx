@@ -3,7 +3,7 @@ import './ProductListing.css';
 import Card from "../../compoments/ProductCard/ProductCard.jsx";
 import { produto } from '../../../json/Product';
 
-export default function ProductListing({ quantidade, ordenacao, searchQuery }) {
+export default function ProductListing({ quantidade = 12, ordenacao = 'Mais relevantes', searchQuery = '', filtros = {} }) {
   if (!produto || !Array.isArray(produto)) {
     return <p>Produtos não disponíveis.</p>;
   }
@@ -13,7 +13,7 @@ export default function ProductListing({ quantidade, ordenacao, searchQuery }) {
       const desconto = produto.discountValue || 0;
       return produto.originalPrice - (produto.originalPrice * desconto / 100);
     }
-    return produto.price;
+    return produto.originalPrice;
   };
 
   const ordenarProdutos = (produtos, criterio) => {
@@ -36,17 +36,39 @@ export default function ProductListing({ quantidade, ordenacao, searchQuery }) {
     return produtosOrdenados;
   };
 
+
+  const filtrosAtuais = {
+    Marcas: filtros.Marcas || [],
+    Categoria: filtros.Categoria || [],
+    Gênero: filtros.Gênero || [],
+    Estado: filtros.Estado || [],
+  };
+
+  
+  const normalizeString = (str) => {
+    return str
+      .normalize('NFD') 
+      .replace(/[\u0300-\u036f]/g, '') 
+      .toLowerCase(); 
+  };
+
   const produtosFiltrados = produto.filter((item) => {
-    return (
-      (item.category && item.category.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes((searchQuery || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase())) ||
-      (item.name && item.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes((searchQuery || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()))
+
+    const queryMatch = (
+      (item.category && normalizeString(item.category).includes(normalizeString(searchQuery || ''))) ||
+      (item.name && normalizeString(item.name).includes(normalizeString(searchQuery || '')))
     );
+
+    const filtroMarcas = filtrosAtuais.Marcas.length === 0 || filtrosAtuais.Marcas.includes(item.brand);
+    const filtroCategoria = filtrosAtuais.Categoria.length === 0 || filtrosAtuais.Categoria.includes(item.category);
+    const filtroGenero = filtrosAtuais.Gênero.length === 0 || filtrosAtuais.Gênero.includes(item.gender);
+    const filtroEstado = filtrosAtuais.Estado.length === 0 || filtrosAtuais.Estado.includes(item.state);
+
+    return queryMatch && filtroMarcas && filtroCategoria && filtroGenero && filtroEstado;
   });
 
-  // Usar produtosFiltrados se houver resultado, caso contrário, usar a lista completa
   const produtosParaExibir = produtosFiltrados.length === 0 ? produto : produtosFiltrados;
 
-  // Corrigir a chamada para ordenarProdutos removendo argumentos extras
   const produtosOrdenados = ordenarProdutos(produtosParaExibir, ordenacao);
 
   const produtosExibidos = produtosOrdenados.slice(0, quantidade);

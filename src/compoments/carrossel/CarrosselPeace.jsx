@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import './Carrossel.css';
+import './CarrosselPeace.css';
 
 const CarrosselPeace = ({carrosseltext,carrosseltitle,carrosseldesc,carrosselimg}) => {
     return (
