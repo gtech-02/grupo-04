@@ -1,11 +1,11 @@
 import Layout from "../compoments/Layout";
 import ProducListing from "../compoments/ProductListing/ProductListing";
 import Section from "../compoments/section/Section";
-import CallToAction from "../compoments/CallAction/CallAction";
-import Gallery from "../compoments/Gallery/Gallery";
+import CallToAction from "../compoments/callAction/CallAction";
+import Gallery from "../compoments/Gallery/gallery";
 import Colecoes from "../compoments/Colecoes/Colecoes";
 import { Carousel } from 'react-bootstrap';
-import CarrosselPeace from "../compoments/Carrossel/CarrosselPeace";
+import CarrosselPeace from "../compoments/carrossel/CarrosselPeace";
 
 
 
