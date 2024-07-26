@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Section/Section.css';
+import './Section.css';
 
 
 

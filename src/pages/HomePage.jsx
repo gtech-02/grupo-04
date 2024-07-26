@@ -1,6 +1,6 @@
 import Layout from "../compoments/Layout";
 import ProducListing from "../compoments/ProductListing/ProductListing";
-import Section from "../compoments/Section/Section";
+import Section from "../compoments/section/Section";
 import CallToAction from "../compoments/CallAction/CallAction";
 import Gallery from "../compoments/Gallery/Gallery";
 import Colecoes from "../compoments/Colecoes/Colecoes";
