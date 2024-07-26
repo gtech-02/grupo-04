@@ -8,6 +8,28 @@ import Section from "../compoments/section/Section";
 const ProductListingPage = () => {
   const [ordemDaLista, setOrdemDaLista] = useState('Mais relevantes');
 
+  // Adicionar estados para os filtros
+  const [filtros, setFiltros] = useState({
+    Marcas: [],
+    Categoria: [],
+    Gênero: [],
+    Estado: [],
+  });
+
+  // Função para atualizar os filtros
+  const handleFilterChange = (titulo, item) => {
+    setFiltros((prevFiltros) => {
+      const itensAtualizados = prevFiltros[titulo].includes(item)
+        ? prevFiltros[titulo].filter((i) => i !== item) // Remover item se já estiver selecionado
+        : [...prevFiltros[titulo], item]; // Adicionar item se não estiver selecionado
+
+      return {
+        ...prevFiltros,
+        [titulo]: itensAtualizados,
+      };
+    });
+  };
+
   return (
     <Layout>
       <div className="container">
@@ -16,14 +38,38 @@ const ProductListingPage = () => {
           <div className="col-md-2 col-sm-12" style={{ padding: '10px' }}>
             <h5 className='fw-bold'>Filtrar por</h5>
             <hr />
-            <FilterGroup titulo={"Marcas"} itens={["Adidas", "Nike", "Puma", "Reebok"]} />
-            <FilterGroup titulo={"Categoria"} itens={["Esporte e Lazer", "Casual", "Utilitário"]} />
-            <FilterGroup titulo={"Gênero"} itens={["Masculino", "Feminino", "Unisex"]} />
-            <FilterGroup titulo={"Estado"} itens={["Novo", "Usado"]} formato="rounded-circle" />
+            <FilterGroup 
+              titulo={"Marcas"} 
+              itens={["Adidas", "Nike", "Puma", "Reebok"]}
+              formato=""
+              onChange={handleFilterChange}
+            />
+            <FilterGroup 
+              titulo={"Categoria"} 
+              itens={["Esporte", "Casual", "Utilitário"]} 
+              formato=""
+              onChange={handleFilterChange}
+            />
+            <FilterGroup 
+              titulo={"Gênero"} 
+              itens={["Masculino", "Feminino", "Unisex"]} 
+              formato=""
+              onChange={handleFilterChange}
+            />
+            <FilterGroup 
+              titulo={"Estado"} 
+              itens={["Novo", "Usado"]} 
+              formato="rounded-circle" 
+              onChange={handleFilterChange}
+            />
           </div>
           <div className="col-md-10 col-sm-12" style={{ padding: '10px' }}>
             <Section>
-              <ProductListing quantidade={12} ordenacao={ordemDaLista} />
+              <ProductListing 
+                quantidade={12} 
+                ordenacao={ordemDaLista} 
+                filtros={filtros}
+              />
             </Section>
           </div>
         </div>

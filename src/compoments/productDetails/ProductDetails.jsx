@@ -10,6 +10,7 @@ import ProductThumbnails from './ProductThumbnails';
 import './productDetails.css';
 import { produto } from '../../../json/Product';
 
+
 const ProductDetails = () => {
   const { id } = useParams();
   const [currentImage, setCurrentImage] = useState('');
@@ -48,7 +49,7 @@ const ProductDetails = () => {
         </div>
         <div className="product-details">
           <h1>{product.name}</h1>
-          <h2>{product.category}</h2>
+          <h2>{product.brand} | {product.category} | {product.gender} | {product.category} | {product.state}</h2>
 
            <div className="d-flex align-items-center">
               <ProductRating rating={product.rating} />

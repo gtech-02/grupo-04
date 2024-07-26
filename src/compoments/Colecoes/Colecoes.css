@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer; /* Adicionado aqui */
+    cursor: pointer; 
   }
   
   .colecao-item .icon {
@@ -26,7 +26,7 @@
     height: 100px;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.1);
   }
   
 

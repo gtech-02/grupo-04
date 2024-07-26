@@ -13,7 +13,7 @@ export default function Card({ produto }) {
                 <img id="imagemcard" src={produto.img} className="card-img-top" alt={produto.name} />
             </Link>
             <div className="card-body">
-                <p className="card-text text-muted">{produto.category}</p>
+                <p className="card-text text-muted">{produto.brand} | {produto.gender} | {produto.category} | {produto.state}</p>
                 <h5 className="card-title">{produto.name}</h5>
                 <p>
                     {produto.discount && produto.discountValue >= 1 && produto.discountValue <= 99 ? (
