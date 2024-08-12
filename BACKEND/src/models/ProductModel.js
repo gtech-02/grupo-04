@@ -18,6 +18,14 @@ const ProductModel = connection.define("Product", {
         allowNull: false
     },
     description: DataTypes.TEXT,
+    slug:{
+        type: DataTypes.STRING(255),
+        allowNull: false
+    },
+    use_in_menu:{
+        type: DataTypes.BOOLEAN(255),
+        defaultValue: 0
+    },
     price: {
         type: DataTypes.DECIMAL(5,2),
         allowNull: false
