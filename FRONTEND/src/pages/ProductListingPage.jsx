@@ -5,6 +5,7 @@ import FilterGroup from '../compoments/filtergroup/FilterGroup';
 import ProductListing from "../compoments/ProductListing/ProductListing";
 import Section from "../compoments/section/Section";
 
+
 const ProductListingPage = () => {
   const [ordemDaLista, setOrdemDaLista] = useState('Mais relevantes');
 

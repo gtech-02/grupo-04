@@ -9,6 +9,8 @@ import CarrosselPeace from "../compoments/carrossel/CarrosselPeace";
 
 
 
+
+
 const HomePage = () => {
 
     return (
@@ -37,9 +39,9 @@ const HomePage = () => {
                 <Section title={"Produtos em alta"} linkText={"Ver Todos"}>
                     <ProducListing quantidade={8} />
                 </Section>
-                <CallToAction />
+                <CallToAction />  
+         
             </Layout>
-
         </>
 
 
