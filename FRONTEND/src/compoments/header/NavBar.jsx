@@ -52,7 +52,7 @@ const NavBar = () => {
           
 
           <div>
-            <a href="#" className="link-secondary">
+            <a href="/LoginPage" className="link-secondary">
               Cadastre-se
             </a>
             <button
