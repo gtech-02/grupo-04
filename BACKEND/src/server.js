@@ -8,16 +8,21 @@ app.use(express.json());
 
 const UserController = require('./controllers/UserController');
 const ProductController = require('./controllers/ProductController');
-const CategoryController = require('./controllers/CategoryController');
+const CategoryController  = require('./controllers/CategoryController');
 const UserCreateValidation = require("./middleware/UserCreateValidation"); 
 const JwtVerifyToken = require("./middleware/JwtVerifyToken");
+const ProductCreateValidation = require("./middleware/ProductCreateValidation");
+const CategoryCreateValidation = require("./middleware/CategoryCreateValidation");
 
 const PrivateRoutes = express.Router();
 
 PrivateRoutes.use(JwtVerifyToken);
 
 app.get('/products', ProductController.list);
-PrivateRoutes.post('/products', ProductController.create);
+PrivateRoutes.post('/products', ProductCreateValidation ,ProductController.create);
+PrivateRoutes.put('/products/:id', ProductController.update);
+PrivateRoutes.delete('/products/:id', ProductController.update);
+
 
 
 app.get('/users', UserController.list);
@@ -26,7 +31,10 @@ app.post('/login', UserController.login);
 PrivateRoutes.put('/users/:id', UserController.update);
 PrivateRoutes.delete('/users/:id', UserController.delete);
 
+
 app.get('/category', CategoryController.list);
+PrivateRoutes.post('/category', CategoryCreateValidation, CategoryController.create);
+
 
 app.use(PrivateRoutes);
 
