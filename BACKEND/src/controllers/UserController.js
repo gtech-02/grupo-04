@@ -50,8 +50,27 @@ const UserController = {
     },
 
     async list(request, response) {
+
+        //retorno de produtos dentro dos usuários
         const users = await UserModel.findAll();
-        return response.json(users);
+        let result = users.map(async (user) => {
+
+            let products = await ProductModel.findAll({
+                where: {
+                    user_id: user.id
+                }
+            })
+
+            return{
+                ...user.dataValues,
+                products: products
+            }
+
+        });
+
+        result = await Promise.all(result);
+
+        return response.json(result);
     },
 
     async update(request, response) {
