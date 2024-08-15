@@ -18,22 +18,22 @@ const PrivateRoutes = express.Router();
 
 PrivateRoutes.use(JwtVerifyToken);
 
+//rotas produtos
 app.get('/products', ProductController.list);
 PrivateRoutes.post('/products', ProductCreateValidation ,ProductController.create);
 PrivateRoutes.put('/products/:id', ProductController.update);
-PrivateRoutes.delete('/products/:id', ProductController.update);
-
-
-
+PrivateRoutes.delete('/products/:id', ProductController.delete);
+//rotas usuários
 app.get('/users', UserController.list);
 PrivateRoutes.post('/users', UserCreateValidation, UserController.create);
 app.post('/login', UserController.login);
 PrivateRoutes.put('/users/:id', UserController.update);
 PrivateRoutes.delete('/users/:id', UserController.delete);
-
-
+//rotas categorias
 app.get('/category', CategoryController.list);
 PrivateRoutes.post('/category', CategoryCreateValidation, CategoryController.create);
+PrivateRoutes.put('/category/:id', CategoryController.update);
+PrivateRoutes.delete('/category/:id', CategoryController.delete);
 
 
 app.use(PrivateRoutes);

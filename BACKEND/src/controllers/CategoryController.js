@@ -13,15 +13,31 @@ const CategoryController = {
     },
 
     async list(request, response) {
-        const category = await CategoryModel.findAll(
-        //     {
-        //     // atributo de retorno das colunas 
-        //     // attributes: []
-        // }
-    );
-        response.json(category);
-    }
+            const category = await CategoryModel.findAll();
+            response.json(category);
+    },
 
+    async update(request, response) {
+        let id = request.params.id;
+        
+        CategoryModel.update(request.body, {
+            where: { id } // id: id
+        });
+
+        return response.json({
+            message: "Categoria atualizada com sucesso"
+        });
+    },
+    async delete (request, response) {
+        let id = request.params.id;
+        CategoryModel.destroy({
+            where: { id }
+        });
+
+        return response.json({
+            message: "Categoria deletada com sucesso"
+        })
+    }
 
 }
 module.exports = CategoryController;

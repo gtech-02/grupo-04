@@ -4,6 +4,8 @@ const jwt = require('jsonwebtoken');
 const ProductController = {
     create(request, response) {
         ProductModel.create(request.body);
+
+        response.status(201);
         response.json({
             message: "Produto criado com sucesso"
         });
@@ -11,6 +13,7 @@ const ProductController = {
 
     async list(request, response) {
         const products = await ProductModel.findAll();
+        response.status(200);
         response.json(products);
     },
 
