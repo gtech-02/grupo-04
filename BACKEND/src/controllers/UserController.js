@@ -52,25 +52,27 @@ const UserController = {
     async list(request, response) {
 
         //retorno de produtos dentro dos usuários
-        const users = await UserModel.findAll();
-        let result = users.map(async (user) => {
+        try {
+            const users = await UserModel.findAll({
+                attributes: { exclude: ['password', "createdAt", "updatedAt"] } 
+            });
 
-            let products = await ProductModel.findAll({
-                where: {
-                    user_id: user.id
-                }
-            })
+            let result = await Promise.all(users.map(async (user) => {
+                let products = await ProductModel.findAll({ where: { user_id: user.id } });
+                return {
+                    ...user.dataValues,
+                    products: products
+                };
+            }));
 
-            return{
-                ...user.dataValues,
-                products: products
-            }
+            return response.json(result);
 
-        });
-
-        result = await Promise.all(result);
-
-        return response.json(result);
+        } catch (error) {
+            return response.status(500).json({
+                message: 'Erro ao listar usuários.',
+                error: error.message
+            });
+        }
     },
 
     async update(request, response) {
