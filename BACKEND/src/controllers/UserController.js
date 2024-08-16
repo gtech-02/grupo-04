@@ -54,7 +54,7 @@ const UserController = {
         //retorno de produtos dentro dos usuários
         try {
             const users = await UserModel.findAll({
-                attributes: { exclude: ['password', "createdAt", "updatedAt"] } 
+                attributes: { exclude: ['password', "createdAt", "updatedAt", "email"] } 
             });
 
             let result = await Promise.all(users.map(async (user) => {

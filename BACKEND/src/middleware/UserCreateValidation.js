@@ -36,6 +36,15 @@ const UserCreateValidation = async (request, response, next) => {
             message: messageReturn
         });
     }
+    
+    const conditionForEmail = /^[^\s@]{4,}@([^\s@]+)\.com$/;
+
+    if (!conditionForEmail.test(email)) {
+        messageReturn = 'Digite um e-mail válido!'
+        return response.status(400).json({
+            message: messageReturn
+        });
+    }
 
     next();
 };
