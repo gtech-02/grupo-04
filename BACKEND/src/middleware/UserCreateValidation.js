@@ -36,6 +36,20 @@ const UserCreateValidation = async (request, response, next) => {
             message: messageReturn
         });
     }
+
+    if (/\s/.test(firstname)) {
+        return response.status(400).json({
+            message: 'Digite apenas o primeiro nome, sem espaços!'
+        });
+    }
+
+    const hasNumbers = /\d/;
+
+    if (hasNumbers.test(firstname) || hasNumbers.test(surname)) {
+        return response.status(400).json({
+            message: 'Não é aceito números no nome!'
+        });
+    }
     
     const conditionForEmail = /^[^\s@]{4,}@([^\s@]+)\.com$/;
 

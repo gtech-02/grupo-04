@@ -87,6 +87,7 @@ const UserController = {
         });
     },
 
+
     async delete (request, response) {
         let id = request.params.id;
         UserModel.destroy({
