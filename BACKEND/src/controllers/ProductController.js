@@ -1,12 +1,46 @@
 const ProductModel = require('../models/ProductModel');
+const ImageModel = require('../models/ImageModel');
+const UserModel = require('../models/UserModel');
 const jwt = require('jsonwebtoken');
+const ProductOptionModel = require('../models/ProductOptionModel');
 
 const ProductController = {
-    create(request, response) {
-        ProductModel.create(request.body);
+    async create(request, response) {
+        let product = await ProductModel.create(request.body);
 
-        response.status(201);
-        response.json({
+        if(request.body?.images) {
+            // Inserindo ID do produto no objeto com os dados da imagem
+            let images = request.body.images.map(image => {
+                return {
+                    product_id: product.id,
+                    path: image.content,
+                    ...image
+                }
+            })
+            
+            // Salvando uma lista de imagens de uma so vez
+            await ImageModel.bulkCreate(images)
+        }
+
+        if(request.body?.options) {
+            
+            let options = request.body.options.map(options => {
+                return {
+                    product_id: product.id,
+                    title: options.title,
+                    shape: options.shape,
+                    radius: options.radius,
+                    type: options.type,
+                    values: options.values,
+                    ...options
+                }
+            })
+            
+          
+            await ProductOptionModel.bulkCreate(options)
+        }
+
+        return response.json({
             message: "Produto criado com sucesso"
         });
     },

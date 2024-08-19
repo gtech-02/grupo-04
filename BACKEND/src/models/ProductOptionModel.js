@@ -29,7 +29,7 @@ const ProductOptionModel = connection.define("ProductOption", {
         defaultValue: 'square'
     },
     radius: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: true,
         defaultValue: 0
     },
