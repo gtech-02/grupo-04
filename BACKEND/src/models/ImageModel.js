@@ -13,11 +13,12 @@ const ImageModel = connection.define("Image", {
         },
         onDelete: 'CASCADE'
     },
-    pacth: {
-        type: DataTypes.STRING(255),
-        allowNull: false
-    }
-    
+    enabled: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: 0
+    },
+    path: DataTypes.STRING(255)
 });
 
 module.exports = ImageModel;

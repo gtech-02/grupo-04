@@ -7,5 +7,5 @@ require('../models/ImageModel');
 require('../models/ProductCategoryModel');
 require('../models/ProductOptionModel')
 
-connection.sync({force: true});
+connection.sync({alter: true});
 
