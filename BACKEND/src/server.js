@@ -13,6 +13,8 @@ const UserCreateValidation = require("./middleware/UserCreateValidation");
 const JwtVerifyToken = require("./middleware/JwtVerifyToken");
 const ProductCreateValidation = require("./middleware/ProductCreateValidation");
 const CategoryCreateValidation = require("./middleware/CategoryCreateValidation");
+const UserUpdateValidation = require("./middleware/UserUpdateValidation");
+
 
 const PrivateRoutes = express.Router();
 
@@ -27,7 +29,7 @@ PrivateRoutes.delete('/products/:id', ProductController.delete);
 app.get('/users', UserController.list);
 PrivateRoutes.post('/users', UserCreateValidation, UserController.create);
 app.post('/login', UserController.login);
-PrivateRoutes.put('/users/:id', UserController.update);
+PrivateRoutes.put('/users/:id', UserUpdateValidation,UserController.update);
 PrivateRoutes.delete('/users/:id', UserController.delete);
 //rotas categorias
 app.get('/category', CategoryController.list);
